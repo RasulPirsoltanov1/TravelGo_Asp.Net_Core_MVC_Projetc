@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\New folder\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\New folder\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\New folder\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\user\\Desktop\\New folder\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\New folder\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +120,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj": {
-                "projectPath": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj"
+              "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj"
               }
             }
           }
@@ -177,14 +177,14 @@
         }
       }
     },
-    "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj": {
+    "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

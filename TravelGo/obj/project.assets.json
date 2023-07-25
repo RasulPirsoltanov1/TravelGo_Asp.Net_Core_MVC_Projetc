@@ -10927,11 +10927,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\New folder\\TravelGo\\TravelGo.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\TravelGo.csproj",
       "projectName": "TravelGo",
-      "projectPath": "C:\\Users\\user\\Desktop\\New folder\\TravelGo\\TravelGo.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\TravelGo.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\New folder\\TravelGo\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10948,14 +10948,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\New folder\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\New folder\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\New folder\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }

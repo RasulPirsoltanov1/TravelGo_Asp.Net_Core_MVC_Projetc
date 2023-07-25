@@ -2019,11 +2019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\EntityLayer.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\New folder\\EntityLayer\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

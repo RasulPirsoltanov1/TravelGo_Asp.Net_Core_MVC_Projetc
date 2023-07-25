@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class IAboutManager : IAboutService
+    public class AboutManager : IAboutService
     {
         private IAboutDal _aboutDal;
 
-        public IAboutManager(IAboutDal aboutDal)
+        public AboutManager(IAboutDal aboutDal)
         {
             _aboutDal = aboutDal;
         }
