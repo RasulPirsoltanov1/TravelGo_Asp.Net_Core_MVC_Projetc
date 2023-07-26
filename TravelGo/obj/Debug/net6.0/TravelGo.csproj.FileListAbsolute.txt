@@ -506,3 +506,8 @@ C:\Users\user\Desktop\TravelGo\TravelGo\obj\Debug\net6.0\refint\TravelGo.dll
 C:\Users\user\Desktop\TravelGo\TravelGo\obj\Debug\net6.0\TravelGo.pdb
 C:\Users\user\Desktop\TravelGo\TravelGo\obj\Debug\net6.0\TravelGo.genruntimeconfig.cache
 C:\Users\user\Desktop\TravelGo\TravelGo\obj\Debug\net6.0\ref\TravelGo.dll
+C:\Users\user\Desktop\TravelGo\TravelGo\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\user\Desktop\TravelGo\TravelGo\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\user\Desktop\TravelGo\TravelGo\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\user\Desktop\TravelGo\TravelGo\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\user\Desktop\TravelGo\TravelGo\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

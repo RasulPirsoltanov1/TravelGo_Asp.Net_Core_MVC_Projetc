@@ -1,0 +1,32 @@
+﻿
+<div class="leave-comment-form mt-5" id="reply">
+    <h4 class="side-title mb-2">Add a comment</h4>
+    <p class="mb-4">
+        Your email address will not be published. Required fields are marked *
+    </p>
+    <form  method="post" asp-action="AddComment" asp-controller="Comment">
+
+        <div class="form-group">
+            <textarea name="CommentContent" class="form-control" placeholder="Your Comment*" required=""
+                      spellcheck="false"></textarea>
+        </div>
+        <div class="input-grids row">
+
+            <div class="form-group col-lg-6">
+                <input type="text" name="CommentUser" class="form-control" placeholder="Your Name*"
+                       required="">
+            </div>
+            <div class="form-group col-lg-6">
+                <input type="hidden" name="DestinationId" value="@ViewBag.Id" class="form-control" placeholder="DestinationId*" required="">
+            </div>
+        </div>
+
+        <div class="submit text-right">
+            <button class="btn btn-style btn-primary">Post Comment </button>
+        </div>
+    </form>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>

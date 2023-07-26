@@ -1,0 +1,88 @@
+﻿@{
+    Layout = null;
+}
+@model RegisterViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TravelGo Registration Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINEARICONS -->
+    <link rel="stylesheet" href="~/login_register/colorlib-regform-26/fonts/linearicons/style.css">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="~/login_register/colorlib-regform-26/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="inner">
+            <img src="~/login_register/colorlib-regform-26/images/image-1.png" alt="" class="image-1">
+            <form method="post" action="SignUp">
+                <h3>
+                    TravelGo
+                    <hr />
+                    New Account?
+                </h3>
+                <div class="" style="color:red" asp-validation-summary="ModelOnly">
+                </div>
+                <div class="form-holder">
+                    <span class="lnr lnr-user"></span>
+                    <input type="text" class="form-control" placeholder="Name" name="Name">
+
+                </div>
+                <span asp-validation-for="Name" style="color:red; font-size:11px; font-style:italic; margin-top:0px; padding-top:0px;"></span>
+                <div class="form-holder" style="margin-bottom:5px;">
+                    <span class="lnr lnr-user"></span>
+                    <input type="text" class="form-control" placeholder="Surname" name="Surname">
+                </div>
+                <span asp-validation-for="Surname" style="color:red; font-size:11px; font-style:italic; margin-top:0px; padding-top:0px;"></span>
+                <div class="form-holder">
+                    <span class="lnr lnr-user"></span>
+                    <input type="text" class="form-control" placeholder="Username" name="Username">
+                </div>
+                <span asp-validation-for="Username" style="color:red; font-size:11px; font-style:italic; margin-top:0px; padding-top:0px;"></span>
+                <div class="form-holder">
+                    <span class="lnr lnr-envelope"></span>
+                    <input type="email" class="form-control" placeholder="Email" name="Email">
+                </div>
+                <span asp-validation-for="Email" style="color:red; font-size:11px; font-style:italic; margin-top:0px; padding-top:0px;"></span>
+
+                <div class="form-holder">
+                    <span class="lnr lnr-phone-handset"></span>
+                    <input type="text" class="form-control" placeholder="Phone number" name="PhoneNumber">
+
+                </div>
+                <span asp-validation-for="PhoneNumber" style="color:red; font-size:11px; font-style:italic; margin-top:0px; padding-top:0px;"></span>
+
+                <div class="form-holder">
+                    <span class="lnr lnr-lock"></span>
+                    <input type="password" class="form-control" placeholder="Password" name="Password">
+
+                </div>
+                <span asp-validation-for="Password" style="color:red; font-size:11px; font-style:italic; margin-top:0px; padding-top:0px;"></span>
+
+                <div class="form-holder">
+                    <span class="lnr lnr-lock"></span>
+                    <input type="password" class="form-control" placeholder="Confirm Password" name="ConfirmPassword">
+
+                </div>
+                <span asp-validation-for="ConfirmPassword" style="color:red; font-size:11px; font-style:italic; margin-top:0px; padding-top:0px;"></span>
+
+                <button>
+                    <span>Register</span>
+                </button>
+                <a asp-action="SignIn" asp-controller="Login"> Login</a>
+            </form>
+            <img src="~/login_register/colorlib-regform-26/images/image-2.png" alt="" class="image-2">
+        </div>
+
+    </div>
+
+    <script src="~/login_register/colorlib-regform-26/js/jquery-3.3.1.min.js"></script>
+    <script src="~/login_register/colorlib-regform-26/js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
