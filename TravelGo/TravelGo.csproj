@@ -33,7 +33,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Memmber\Data\" />
-    <Folder Include="Areas\Memmber\Models\" />
+    <Folder Include="wwwroot\user_images\" />
   </ItemGroup>
 
 </Project>
