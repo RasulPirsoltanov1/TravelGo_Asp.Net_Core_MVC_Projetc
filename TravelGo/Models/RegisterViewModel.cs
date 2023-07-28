@@ -24,4 +24,13 @@ namespace TravelGo.Models
         [Compare(nameof(Password),ErrorMessage ="Confirm Password not equla ")]
         public string ConfirmPassword { get; set; }
     }
+    public class UserSignInViewModel
+    {
+        
+        [Required(ErrorMessage = "Please fill Username field")]
+        public string Username { get; set; }
+      
+        [Required(ErrorMessage = "Please fill Password field")]
+        public string Password { get; set; }
+    }
 }

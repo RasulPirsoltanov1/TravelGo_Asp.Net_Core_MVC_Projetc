@@ -32,11 +32,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\" />
-    <Folder Include="Areas\Memmber\Controllers\" />
     <Folder Include="Areas\Memmber\Data\" />
     <Folder Include="Areas\Memmber\Models\" />
-    <Folder Include="Areas\Memmber\Views\" />
   </ItemGroup>
 
 </Project>
