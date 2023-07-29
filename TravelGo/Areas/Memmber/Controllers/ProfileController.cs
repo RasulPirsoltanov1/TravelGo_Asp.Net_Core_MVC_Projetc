@@ -34,7 +34,7 @@ namespace TravelGo.Areas.Memmber.Controllers
                     Name = values.Name,
                     Surname = values.Surname,
                     PhoneNumber = values.PhoneNumber,
-                    ImageUrl = values.ImageUrl
+                    ImageUrl = values.ImageUrl ?? ""
                 });
 
             else

@@ -27,6 +27,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtbWJlclxWaWV3c1xQcm9maWxlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/user/Desktop/TravelGo/TravelGo/Areas/Memmber/Views/Reservation/MyAppRovalReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtbWJlclxWaWV3c1xSZXNlcnZhdGlvblxNeUFwcFJvdmFsUmVzZXJ2YXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/TravelGo/TravelGo/Areas/Memmber/Views/Reservation/MyCurrentReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtbWJlclxWaWV3c1xSZXNlcnZhdGlvblxNeUN1cnJlbnRSZXNlcnZhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/TravelGo/TravelGo/Areas/Memmber/Views/Reservation/MyOldReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtbWJlclxWaWV3c1xSZXNlcnZhdGlvblxNeU9sZFJlc2VydmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/Desktop/TravelGo/TravelGo/Areas/Memmber/Views/Reservation/NewReservation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtbWJlclxWaWV3c1xSZXNlcnZhdGlvblxOZXdSZXNlcnZhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

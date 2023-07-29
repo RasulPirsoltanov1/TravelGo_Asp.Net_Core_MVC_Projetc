@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bWZQEvdSRc3/vdfn1BVaJj0ZqSnmDQRgEUjcFr8DV90=",
+  "Hash": "rqFCvVsAkUJaiy9rATsqk0Ls4EtyMlbj1JcJAjnG2Wc=",
   "Source": "TravelGo",
   "BasePath": "_content/TravelGo",
   "Mode": "Default",
@@ -10149,6 +10149,23 @@
       "OriginalItemSpec": "wwwroot\\user_images\\3.jpg"
     },
     {
+      "Identity": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\wwwroot\\user_images\\7638fa94-5628-49db-9064-4f06b73877b2.jpg",
+      "SourceId": "TravelGo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\wwwroot\\",
+      "BasePath": "_content/TravelGo",
+      "RelativePath": "user_images/7638fa94-5628-49db-9064-4f06b73877b2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user_images\\7638fa94-5628-49db-9064-4f06b73877b2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\wwwroot\\user_images\\915285e4-cb66-46c5-9c4e-ab98a637f523.jpg",
       "SourceId": "TravelGo",
       "SourceType": "Discovered",
@@ -10198,6 +10215,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user_images\\b7fd5810-7023-42ad-ab5c-a0f91077a8c5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\wwwroot\\user_images\\e98bf273-f810-48b9-8e28-e349cbce5d36.jpg",
+      "SourceId": "TravelGo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\wwwroot\\",
+      "BasePath": "_content/TravelGo",
+      "RelativePath": "user_images/e98bf273-f810-48b9-8e28-e349cbce5d36.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user_images\\e98bf273-f810-48b9-8e28-e349cbce5d36.jpg"
     }
   ]
 }

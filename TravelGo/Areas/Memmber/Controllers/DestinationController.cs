@@ -7,6 +7,7 @@ namespace TravelGo.Areas.Memmber.Controllers
 {
     [Area("memmber")]
     [AllowAnonymous]
+    [Route("[Area]/[controller]/[action]")]
     public class DestinationController : Controller
     {
         private DestinationManager _destinationManager = new DestinationManager(new DataAccessLayer.Concrete.EntityFramework.EfDestinationDal());

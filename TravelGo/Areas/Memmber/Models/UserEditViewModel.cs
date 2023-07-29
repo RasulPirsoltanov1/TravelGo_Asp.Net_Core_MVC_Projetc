@@ -12,8 +12,8 @@ namespace TravelGo.Areas.Memmber.Models
         public string Surname { get; set; }
         [Required(ErrorMessage = "Please fill Email field")]
         public string Email { get; set; }
-        [Required(ErrorMessage = "Please fill PhoneNumber field")]
-        public string PhoneNumber { get; set; }
+        //[Required(ErrorMessage = "Please fill PhoneNumber field")]
+        public string? PhoneNumber { get; set; }
         public string? ImageUrl { get; set; }
         //[Required(ErrorMessage = "Please fill Password field")]
         public string? Password { get; set; }
