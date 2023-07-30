@@ -62,6 +62,7 @@ namespace TravelGo.Areas.Memmber.Controllers
         {
             reservation.AppUserId = 7;
             reservation.Status = "wait verifying";
+            reservation.DestinationId = 2;
             _reservationManager.TAdd(reservation);
             return RedirectToAction(nameof(MyCurrentReservation));
         }
