@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Areas/Admin/Views/Destination/AddDestination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVzdGluYXRpb25cQWRkRGVzdGluYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Areas/Admin/Views/Destination/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVzdGluYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Areas/Admin/Views/Destination/UpdateDestinationById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVzdGluYXRpb25cVXBkYXRlRGVzdGluYXRpb25CeUlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Areas/Memmber/Views/Comment/Index.cshtml]
