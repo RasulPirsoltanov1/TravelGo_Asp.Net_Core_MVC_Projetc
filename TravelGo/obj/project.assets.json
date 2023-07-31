@@ -3907,7 +3907,6 @@
           "EntityLayer": "1.0.0",
           "FluentValidation": "11.6.0",
           "FluentValidation.AspNetCore": "11.3.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20"
         },
@@ -3938,9 +3937,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore": "6.0.20",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20",
+          "Microsoft.Extensions.Identity.Stores": "6.0.20"
         },
         "compile": {
           "bin/placeholder/EntityLayer.dll": {}
@@ -11095,23 +11094,29 @@
       "Microsoft.EntityFrameworkCore.Design >= 6.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.20",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.20",
+      "Microsoft.Extensions.Identity.Stores >= 6.0.20",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.15"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\resul\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\TravelGo.csproj",
+      "projectUniqueName": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\TravelGo.csproj",
       "projectName": "TravelGo",
-      "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\TravelGo.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\TravelGo\\TravelGo\\obj\\",
+      "projectPath": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\TravelGo.csproj",
+      "packagesPath": "C:\\Users\\resul\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\resul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11119,20 +11124,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\BusinessLayer\\BusinessLayer.csproj"
+            "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\BusinessLayer\\BusinessLayer.csproj"
             },
-            "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj": {
-              "projectPath": "C:\\Users\\user\\Desktop\\TravelGo\\EntityLayer\\EntityLayer.csproj"
+            "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\EntityLayer\\EntityLayer.csproj": {
+              "projectPath": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\EntityLayer\\EntityLayer.csproj"
             }
           }
         }
@@ -11171,6 +11177,10 @@
             "target": "Package",
             "version": "[6.0.20, )"
           },
+          "Microsoft.Extensions.Identity.Stores": {
+            "target": "Package",
+            "version": "[6.0.20, )"
+          },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[6.0.15, )"
@@ -11195,7 +11205,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

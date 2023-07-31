@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.Contexts
 {
-    public class Context : DbContext
+    public class Context : IdentityDbContext<AppUser,AppRole,int>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-O87JGVH;Database=TravelGoDB;integrated security=true;");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TravelGoDB;integrated security=true;");
             base.OnConfiguring(optionsBuilder);
         }
         public DbSet<About> Abouts { get; set; }
@@ -25,5 +26,7 @@ namespace DataAccessLayer.Concrete.Contexts
         public DbSet<NewsLetter> NewsLetters{ get; set; }
         public DbSet<SubAbout> SubAbouts{ get; set; }
         public DbSet<Testimonial> Testimonials{ get; set; }
+        public DbSet<Comment> Comments{ get; set; }
+        public DbSet<Reservation> Reservations{ get; set; }
     }
 }

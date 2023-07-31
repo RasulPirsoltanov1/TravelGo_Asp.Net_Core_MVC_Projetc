@@ -26,3 +26,17 @@ C:\Users\user\Desktop\TravelGo\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.d
 C:\Users\user\Desktop\TravelGo\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\user\Desktop\TravelGo\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
 C:\Users\user\Desktop\TravelGo\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\bin\Debug\net6.0\EntityLayer.runtimeconfig.json
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

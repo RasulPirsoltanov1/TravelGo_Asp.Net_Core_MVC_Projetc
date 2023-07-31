@@ -13,7 +13,7 @@ namespace TravelGo.Areas.Memmber.Controllers
     public class ReservationController : Controller
     {
         DestinationManager _destinationManager = new DestinationManager(new EfDestinationDal());
-        ReservationManager _reservationManager = new ReservationManager(new EfResrevationDal());
+        ReservationManager _reservationManager = new ReservationManager(new EfReservationDal());
         UserManager<AppUser> _userManager;
 
         public ReservationController(UserManager<AppUser> userManager)

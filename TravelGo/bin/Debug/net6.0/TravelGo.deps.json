@@ -16,6 +16,7 @@
           "Microsoft.EntityFrameworkCore.Design": "6.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.20",
+          "Microsoft.Extensions.Identity.Stores": "6.0.20",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.15"
         },
         "runtime": {
@@ -2573,7 +2574,6 @@
           "EntityLayer": "1.0.0",
           "FluentValidation": "11.6.0",
           "FluentValidation.AspNetCore": "11.3.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20"
         },
@@ -2594,9 +2594,9 @@
       },
       "EntityLayer/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore": "6.0.20",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20",
+          "Microsoft.Extensions.Identity.Stores": "6.0.20"
         },
         "runtime": {
           "EntityLayer.dll": {}

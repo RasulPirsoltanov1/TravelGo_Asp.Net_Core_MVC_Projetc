@@ -5,6 +5,7 @@ using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,6 +39,11 @@ namespace BusinessLayer.Concrete
         public List<About> TGetList()
         {
             return _aboutDal.GetList();
+        }
+
+        public List<About> TGetListByFilter(Expression<Func<About, bool>> expression)
+        {
+            throw new NotImplementedException();
         }
 
         public void TUpdate(About t)

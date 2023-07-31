@@ -3,6 +3,7 @@ using DataAccessLayer.Concrete.Abstract.Generics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,6 +36,11 @@ namespace BusinessLayer.Concrete
         public List<T> TGetList()
         {
             return _dal.GetList();
+        }
+
+        public List<T> TGetListByFilter(Expression<Func<T, bool>> expression)
+        {
+            return _dal.TGetListByFilter(expression);
         }
 
         public void TUpdate(T t)
