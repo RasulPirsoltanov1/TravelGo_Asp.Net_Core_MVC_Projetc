@@ -13,7 +13,7 @@ namespace DataAccessLayer.Concrete.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=TravelGoDB;integrated security=true;");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-UGCLLOE\\MSSQLSERVER2;Database=TravelGoDB;integrated security=true;");
             base.OnConfiguring(optionsBuilder);
         }
         public DbSet<About> Abouts { get; set; }

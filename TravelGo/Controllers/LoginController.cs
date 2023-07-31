@@ -33,7 +33,8 @@ namespace TravelGo.Controllers
                     Name = registerViewModel.Name,
                     UserName = registerViewModel.Username,
                     Surname = registerViewModel.Surname,
-                    Email = registerViewModel.Email
+                    Email = registerViewModel.Email,
+                    Gender = "_"
                 };
                 if (registerViewModel.Password == registerViewModel.ConfirmPassword)
                 {
