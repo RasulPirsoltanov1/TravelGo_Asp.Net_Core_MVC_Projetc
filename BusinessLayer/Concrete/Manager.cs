@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Concrete.Abstract.Generics;
+using DataAccessLayer.Concrete.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class Manager<T,TDal> : IGenericService<T> where T : class where TDal:IGenericDal<T>
+    public class Manager<T,TDal> : IGenericService<T> where T : class where TDal : GenericRepository<T>
     {
         private TDal _dal;
 

@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,7 +7,13 @@ namespace TravelGo.Controllers
 {
     public class CommentController : Controller
     {
-        private CommentManager _commentManager = new CommentManager(new EfCommentDal());
+        private ICommentService _commentManager;
+
+        public CommentController(ICommentService commentManager)
+        {
+            _commentManager = commentManager;
+        }
+
         [HttpGet]
         public PartialViewResult AddComment()
         {
@@ -20,5 +27,6 @@ namespace TravelGo.Controllers
             _commentManager.TAdd(comment);
             return RedirectToAction("DestinationDetails", "Destination", new { id = comment.DestinationId });
         }
+    
     }
 }

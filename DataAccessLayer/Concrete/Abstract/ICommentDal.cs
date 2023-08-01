@@ -5,5 +5,7 @@ namespace DataAccessLayer.Concrete.Abstract
 {
     public interface ICommentDal : IGenericDal<Comment>
     {
+        List<Comment> GetCommenWithDestinations();
+
     }
 }

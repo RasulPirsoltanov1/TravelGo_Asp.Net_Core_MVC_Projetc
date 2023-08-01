@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@using EntityLayer.Concrete;
+@model List<Comment>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f2f2f2;
+    }
+
+    td a {
+        color: red;
+        text-decoration: none;
+    }
+
+        td a:hover {
+            color: darkred;
+            text-decoration: underline;
+        }
+</style>
+
+<h1>Comment List</h1>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>User</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td></td>
+            <td>@item.CommentUser</td>
+            <td>@item.Destination.City</td>
+            <td>@item.CommentDate.ToString("dd-MMM-yyyy")</td>
+            <td><a class="btn btn-danger" asp-action="Delete" asp-controller="Comment" asp-area="Admin" asp-route-Id="@item.CommentId" style="color:white">Delete</a></td>
+        </tr>
+    }
+</table>

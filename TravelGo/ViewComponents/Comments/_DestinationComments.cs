@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,13 @@ namespace TravelGo.ViewComponents.Comment
 {
     public class _DestinationComments : ViewComponent
     {
-        CommentManager _commentManager = new CommentManager(new EfCommentDal());
+        ICommentService _commentManager;
+
+        public _DestinationComments(ICommentService commentManager)
+        {
+            _commentManager = commentManager;
+        }
+
         public IViewComponentResult Invoke(int id)
         {
             var comments = _commentManager.TGetListByFilter(c => c.DestinationId == id);
