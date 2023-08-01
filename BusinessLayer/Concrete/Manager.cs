@@ -13,7 +13,7 @@ namespace BusinessLayer.Concrete
     public class Manager<T,TDal> : IGenericService<T> where T : class where TDal : GenericRepository<T>
     {
         private TDal _dal;
-
+        
         public Manager(TDal dal)
         {
             this._dal = dal;

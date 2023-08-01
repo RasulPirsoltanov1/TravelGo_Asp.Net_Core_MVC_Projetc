@@ -1,53 +1,24 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete.Main;
 using DataAccessLayer.Concrete.Abstract;
+using DataAccessLayer.Concrete.Abstract.Generics;
 using DataAccessLayer.Concrete.EntityFramework;
 using EntityLayer.Concrete;
 using System.Linq.Expressions;
 
 namespace BusinessLayer.Concrete
 {
-    public class CommentManager : ICommentService
+    public class CommentManager : GenericService<Comment,ICommentDal>, ICommentService
     {
-        ICommentDal dal;
-
-        public CommentManager(ICommentDal dal)
+        private ICommentDal _commentDal;
+        public CommentManager(ICommentDal commentDal) : base(commentDal)
         {
-            this.dal = dal;
+            _commentDal = commentDal;
         }
 
         public List<Comment> GetCommentsWithDestination()
         {
-            return dal.GetCommenWithDestinations();
-        }
-
-        public void TAdd(Comment t)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void TDelete(Comment t)
-        {
-            dal.Delete(t);
-        }
-
-        public Comment TGetById(int Id)
-        {
-            return dal.GetById(Id);    
-        }
-
-        public List<Comment> TGetList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Comment> TGetListByFilter(Expression<Func<Comment, bool>> expression)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void TUpdate(Comment t)
-        {
-            throw new NotImplementedException();
+            return _commentDal.GetCommenWithDestinations();
         }
     }
 }

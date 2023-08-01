@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,7 +9,13 @@ namespace TravelGo.Areas.Admin.Controllers
     [Route("[area]/[controller]/[action]")]
     public class DestinationController : Controller
     {
-        DestinationManager _destinationManager = new DestinationManager(new DataAccessLayer.Concrete.EntityFramework.EfDestinationDal());
+        IDestinationService _destinationManager;
+
+        public DestinationController(IDestinationService destinationManager)
+        {
+            _destinationManager = destinationManager;
+        }
+
         [HttpGet]
         public IActionResult Index()
         {

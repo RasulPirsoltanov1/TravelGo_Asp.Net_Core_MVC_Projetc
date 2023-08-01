@@ -1,4 +1,5 @@
-﻿using BusinessLayer.Concrete;
+﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,7 +7,13 @@ namespace TravelGo.Controllers
 {
     public class DestinationController : Controller
     {
-        DestinationManager _destinationManager = new DestinationManager(new DataAccessLayer.Concrete.EntityFramework.EfDestinationDal());
+        IDestinationService _destinationManager;
+
+        public DestinationController(IDestinationService destinationManager)
+        {
+            _destinationManager = destinationManager;
+        }
+
         public IActionResult Index()
         {
             return View(_destinationManager.TGetList());
