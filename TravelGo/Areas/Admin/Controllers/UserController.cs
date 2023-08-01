@@ -9,10 +9,12 @@ namespace TravelGo.Areas.Admin.Controllers
     public class UserController : Controller
     {
         private readonly IAppUserService _appUserService;
+        private IReservationService _reservationService;
 
-        public UserController(IAppUserService appUserService)
+        public UserController(IAppUserService appUserService, IReservationService reservationService)
         {
             _appUserService = appUserService;
+            _reservationService = reservationService;
         }
 
         public IActionResult Index()
@@ -43,7 +45,8 @@ namespace TravelGo.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult Reservations(int id)
         {
-            return View(_appUserService.TGetList());
+            var values = _reservationService.TGetListByFilter(r => r.Status == "accepted");
+            return View(values);
         }
     }
 }

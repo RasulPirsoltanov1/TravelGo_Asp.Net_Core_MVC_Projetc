@@ -1,20 +1,21 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete.Main;
+using DataAccessLayer.Concrete.Abstract;
 using DataAccessLayer.Concrete.EntityFramework;
 using EntityLayer.Concrete;
 using System.Linq.Expressions;
 
 namespace BusinessLayer.Concrete
 {
-    public class ReservationManager : Manager<Reservation, EfReservationDal>, IReservationService
+    public class ReservationManager : GenericService<Reservation, IReservationDal>, IReservationService
     {
-        public ReservationManager(EfReservationDal dal) : base(dal)
+        IReservationDal tdal;
+        public ReservationManager(IReservationDal tdal) : base(tdal)
         {
         }
-
         public List<Reservation> GetAllReservationsWithDestination(Expression<Func<Reservation, bool>> expression)
         {
-            EfReservationDal dal = new EfReservationDal();
-            return dal.GetAllReservationsWithDestination(expression);
+            return tdal.GetAllReservationsWithDestination(expression);
         }
     }
 }

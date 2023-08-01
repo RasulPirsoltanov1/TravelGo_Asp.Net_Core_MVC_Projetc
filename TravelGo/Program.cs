@@ -1,5 +1,6 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using BusinessLayer.Container;
 using DataAccessLayer.Concrete.Abstract;
 using DataAccessLayer.Concrete.Contexts;
 using DataAccessLayer.Concrete.EntityFramework;
@@ -17,12 +18,9 @@ builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>()
     .AddEntityFrameworkStores<Context>()
     .AddErrorDescriber<CustomIdentityValidator>();
-builder.Services.AddScoped<ICommentDal, EfCommentDal>();
-builder.Services.AddScoped<ICommentService, CommentManager>();
-builder.Services.AddScoped<IDestinationDal, EfDestinationDal>();
-builder.Services.AddScoped<IDestinationService, DestinationManager>();
-builder.Services.AddScoped<IAppUserDal, EfAppUserDal>();
-builder.Services.AddScoped<IAppUserService, AppUserManager>();
+
+builder.Services.ContainerDependencies();
+
 builder.Services.AddMvc(config =>
 {
     var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();

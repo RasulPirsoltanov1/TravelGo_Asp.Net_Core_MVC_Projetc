@@ -1,0 +1,58 @@
+﻿@using EntityLayer.Concrete;
+@model List<Reservation>
+@{
+    ViewData["Title"] = "Reservations";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int counter = 0;
+}
+
+<div class="container">
+    <h1>User Reservations</h1>
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>UserName</th>
+                <th>Destination</th>
+                <th>People count</th>
+                <th>Date</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                @(counter++)
+                ;
+                <tr>
+                    <td>@counter</td>
+                    <td>@item.AppUserId</td>
+                    <td>@item.Destination</td>
+                    <td>@item.PersonCount</td>
+                    <td>@item.ReservationDate</td>
+                    <td>@item.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function confirmDelete() {
+        var result = confirm("Are you sure you want to delete this item?");
+        if (result) {
+            // User confirmed, perform delete action
+            return true;
+        } else {
+            // User cancelled, do not perform delete action
+            return false;
+        }
+    }
+</script>
+
+
+<div class="buy-now">
+    <a asp-action="SignUp" asp-controller="Login"
+       target="_blank"
+       class="btn btn-success btn-buy-now">Add new User</a>
+</div>
