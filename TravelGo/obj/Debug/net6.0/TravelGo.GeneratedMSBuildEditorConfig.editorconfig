@@ -196,6 +196,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NhcmQxU3RhdGlzdGljc1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_Card2Statistics/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NhcmQyU3RhdGlzdGljc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_DashboardBanner/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rhc2hib2FyZEJhbm5lclxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -206,6 +210,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_Features/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0ZlYXR1cmVzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_GuideListDashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0d1aWRlTGlzdERhc2hib2FyZFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_GuideList/Default.cshtml]
@@ -238,6 +246,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_Testimonials/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Rlc3RpbW9uaWFsc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_TotalRevanue/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1RvdGFsUmV2YW51ZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_TourStatistics2/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1RvdXJTdGF0aXN0aWNzMlxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Components/_TourStatistics/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1RvdXJTdGF0aXN0aWNzXERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Views/Shared/Error.cshtml]
