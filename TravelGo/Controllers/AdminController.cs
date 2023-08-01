@@ -12,5 +12,21 @@ namespace TravelGo.Controllers
         {
             return PartialView();
         }
+        public PartialViewResult PartialSideBar()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialNavbar()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialFooter()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialJs()
+        {
+            return PartialView();
+        }
     }
 }
