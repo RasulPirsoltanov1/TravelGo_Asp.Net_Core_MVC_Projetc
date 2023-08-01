@@ -8,7 +8,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="index.html" class="menu-link">
+        <a asp-action="Index" asp-controller="Destination" asp-area="admin" class="menu-link">
             <img style="height:20px; padding-right:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXNJREFUSEvFltFRAzEMRJVKApUQKgEqCakkUAl0Ap3AvBkrIy6SZflI4p/LXGSvdm8layM3Wpsb4coM8J2I7ESE53dLnOdnhUQF+FVEnhqghwH4u4gQl64RYJgdG8v0wKbCo1HD3ZMBA/q12KnMeL0PMiHmpSd/BvxhmHpS/nQkID5k3gNG3mdjnvv2GxV4/zAg/1tjfpZfBLyUmMxxLYAkNLpCySNgnKnf79CcSgkhfXXp/j/7ImAMBWsWEpO5fVcBRykUKwNrcj0j9RIhafXHKS5irCDq5K0xWoWtxp7hRMC2jGaA7J4S4/8EdktqxNVrGZdcPVs6XpK0TlgPuZpSQm4tqTWsXVV7LbPapbzkXJkJ7AF7N1OVeXh+djutYR2yzRgrO9u3RxmHt1LYUYKTK+Bubx51tYd/9ZnLJqETJkMftc4qDXlVqZcK2Okk/Z6efJmrIzPZK9K9BDIXzgDrzGXPxlAXG+gzEqX/ZxiXAKLgX7XASR8RRVfNAAAAAElFTkSuQmCC" />
             <div data-i18n="Analytics">Destinations</div>
         </a>
@@ -37,5 +37,40 @@
             <div data-i18n="Analytics">Guides</div>
         </a>
     </li>
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>
+    <li class="menu-item">
+        <a href="index.html" class="menu-link">
+            <img style="height:20px; padding-right:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbBJREFUSEvFloFNxDAMRf9tApMAkwCTAJPATQJMApuAXhVXvjROnVLUSCedrmmev/3t3EkHrdNBXO0BvpV0VT4fkr7Lp6tpKxjQqySgrUUAZ0kWyGLPFvBDga5VCehdtGkU/F6pfJP0WZTxjEywulA2jICfJT2Vg6njYwHwkw8oghIU700rC+alLwe9dinMQNlDZgh+COzVUjdUZZVaYBeZyCr+aaglC76uL15RIzB+IlNTujNgn+b6cNqJtjJT+ee1EeHhCww5DJ5fdDVuwW+c+1G4CCyjmIOJnuXr69jTIPHK7Rl1JVgz5pBiDrEat+pokBpuZvKBbwavDQaDk16bWr4j5gxnUp3p0zrt1m7emEPtNAr1AfCd2pqxLvzRU/wXKClnvNrttfBGBM5AzemMwnkGS7qvLpKmL1rgLDS6i326o/ZbDBDvwMjB9UTyAwKoXf60TrhqxdavGajfg/rUX57odvIunAf6wE3UE3nxrFZMqjGHtYDBM3VPQ6NLooaTUjPS2uRKw6N2quFmmvDPW5pYNvYGiA0B0s4AmO7RvVZmVu/F6prrXyCtQw9T/AtqW3Uf/Pc4KgAAAABJRU5ErkJggg==" />
+            <div data-i18n="Analytics">Features</div>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="index.html" class="menu-link">
+            <img style="height:20px; padding-right:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOFJREFUSEvtltENwkAMQ91NGAUmASYpTAKbwCiMgl4lUKgup6gNtBKX7zROHDvXTgtFtxCuGvDPmK9RfZB0cTo5SzrN6bIGfJO0dYrfJe3WAAw7m0IjV0mPUoMZE0N570wP8PFbwJNWkjFxA7YrddVvqUaVVpl4uKRUClMQLxPRPHJR+KByC1xT5xzL2m/fh2cVwGOq8aZ3uaDr5c9onkv1mM6oTaJ5H/Wbjy0dUQqjeelU42Nep1K473bGjnFDCRjl8zoVIwN40nGpAXPJ9s7ZxMPuNJFO2u9thKWUnP+j+gmG8UgfrTM3PgAAAABJRU5ErkJggg==" />
+            <div data-i18n="Analytics">References</div>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="index.html" class="menu-link">
+            <img style="height:20px; padding-right:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAa1JREFUSEvFVttNxEAMnOsEKgEqAdpASEAlx1Vy8EUZUAlCE60jr2/9SHLo9icf8Xo83vFjhwud3YVwsQb4CsAtAH5/WuD8fiwhUQUmyAOAl8C5gL+pgFzzDLgCaJ1LAI9RBiJggh5bSpdkUWwZwJ3H3gMm6PcaNHOH4GR+8v4eMJlSQOc4BL+2jkbA+yYkaxupNgvyvTGffVpgOiDb0cn0EKn+JOXWmceWgWQVQJvoPjNGsU3HOqOgKKyI8SuAG2PwBOCr6cLLWPfWGjhKsw6SwKNGQl9ZNZDxpBUNzDdiqrwjtpbxL4DnxjjzwdKi0FYBRyWWlSHbKQPvgL0UenrQATDFTD8ZR2cTYzq/B/Ap0bdvNEAkmCHwUnHp2iRj6iNrJOxg0yjV4soUqcUl7HSJZPc7PFvHkThGwHQ2CyZJedc2LXAUtQdcTflcw14bzIYEg7PdjeCyBo3+p0OCwWxdAGw5lceigJ9jEaCvLsXVprB19RluH94b246UbZejTqWVHo66pNNN7561RL7loQ0BEVo6cTJg+S9qlg4lS/2/LfTVwMp2lXWm7GyJ4R9La2Af6pIv0wAAAABJRU5ErkJggg==" />            <div data-i18n="Analytics">Reservations</div>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="index.html" class="menu-link">
+            <img style="height:20px; padding-right:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAUxJREFUSEvtlttxwkAMRS+VhHSSVAJUkqSShEpIKekkmcNYHlmzD9lA/GP9AVod3SutzU4rxW4lrjbwvzlfs3ov6U3S8U6dfEs6S/qyejXw+wC+E3cs8yzph0818K8jkki3S+IpuHYy1RkwwI/hwLXbZLxIuoRc6uBmSrGdZU50nIHXRpUGswwsGt1bjHYVlJP7GfJfnfI02BJRcBiaqFkfrcUZmsQp25nZYGAURg2qCG99tJbfUGqRBttSTO7eAI1WAvGjAMh3PtLg3uJG68n31sbzTXDmoeHVeOujtQ8FW3Fm3rtiTcUo8LMq2c316kFK59IzbjUAeC48DfbP6qhgvIu9DVxynVYDZ62OL4GaCVav++TyBdja+IeAGbNoLWdiE5zhfXyNzJ+90uvN7m1WMVDUjkt5K3jGfk1TM+DFxVsHN/BDbC0VXc3qPyjMYh8OQpUwAAAAAElFTkSuQmCC" />
+            <div data-i18n="Analytics">Mail List</div>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="index.html" class="menu-link">
+            <img style="height:20px; padding-right:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbBJREFUSEvFloFNxDAMRf9tApMAkwCTAJPATQJMApuAXhVXvjROnVLUSCedrmmev/3t3EkHrdNBXO0BvpV0VT4fkr7Lp6tpKxjQqySgrUUAZ0kWyGLPFvBDga5VCehdtGkU/F6pfJP0WZTxjEywulA2jICfJT2Vg6njYwHwkw8oghIU700rC+alLwe9dinMQNlDZgh+COzVUjdUZZVaYBeZyCr+aaglC76uL15RIzB+IlNTujNgn+b6cNqJtjJT+ee1EeHhCww5DJ5fdDVuwW+c+1G4CCyjmIOJnuXr69jTIPHK7Rl1JVgz5pBiDrEat+pokBpuZvKBbwavDQaDk16bWr4j5gxnUp3p0zrt1m7emEPtNAr1AfCd2pqxLvzRU/wXKClnvNrttfBGBM5AzemMwnkGS7qvLpKmL1rgLDS6i326o/ZbDBDvwMjB9UTyAwKoXf60TrhqxdavGajfg/rUX57odvIunAf6wE3UE3nxrFZMqjGHtYDBM3VPQ6NLooaTUjPS2uRKw6N2quFmmvDPW5pYNvYGiA0B0s4AmO7RvVZmVu/F6prrXyCtQw9T/AtqW3Uf/Pc4KgAAAABJRU5ErkJggg==" />
+            <div data-i18n="Analytics">Features 2</div>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="index.html" class="menu-link">
+            <img style="height:20px; padding-right:7px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAARBJREFUSEvtltsNwjAMRW83YRTYBCYBJkFMAqOwSdFBGEUhbe1UNEKqpf5USY4f1046NbKuEVd/B95I4vPaPV9YE/FF0t5LfK97SLpKOtm+KBgg4FrbSXpFHwXfJG0lEcEhQGcfdraoa8F4jfde61fwVKppGQRlarQa/zTViAhQCuEfhrj4vOaucdo20ehKzrjA+YAATBt47WtKSRoFU0+glk4vKF9X0s0kmJpGZnDJuTCYQ0zFx+TE6JQKpzr1nvYx+GLiMgeIntQTsY3H9DosRTakC5eq082AiNwuhEUGSMn7Fezt9XCN84PTVEem2eyHQLOnz5yx+nn2kMap+3iohk2et15Bja6rjXg2vBn4CSXdWB/fOUTdAAAAAElFTkSuQmCC" />
+            <div data-i18n="Analytics">Log out</div>
+        </a>
+    </li>
+    @*<li class="menu-header small text-uppercase"><span class="menu-header-text">Misc</span></li>*@
 </ul>

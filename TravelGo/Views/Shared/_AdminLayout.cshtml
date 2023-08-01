@@ -43,9 +43,6 @@
             <div class="layout-page">
                 <!-- Navbar -->
                 @await Html.PartialAsync("/Views/Admin/PartialNavbar.cshtml")
-
-
-
                 <!-- / Navbar -->
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
@@ -74,6 +71,9 @@
 
     <!-- Core JS -->
     @await Html.PartialAsync("/Views/Admin/PartialJs.cshtml")
+    <script src="~/sneat-1.0.0/assets/vendor/libs/apex-charts/apexcharts.js"></script>
 
+    <!-- Page JS -->
+    <script src="~/sneat-1.0.0/assets/js/dashboards-analytics.js"></script>
 </body>
 </html>
