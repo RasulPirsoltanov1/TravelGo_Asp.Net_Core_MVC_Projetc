@@ -59,7 +59,7 @@ namespace DataAccessLayer.Concrete.Repository
         {
             using (var context = new Context())
             {
-                context.Update(entity);
+                context.Set<T>().Update(entity);
                 context.SaveChanges();
             }
         }

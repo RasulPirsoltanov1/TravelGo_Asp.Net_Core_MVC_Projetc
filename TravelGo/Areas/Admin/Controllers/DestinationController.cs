@@ -24,9 +24,9 @@ namespace TravelGo.Areas.Admin.Controllers
         public IActionResult AddDestination(Destination destination)
         {
             _destinationManager.TAdd(destination);
-            return View();
+            return RedirectToAction(nameof(Index));
         }
-        [HttpDelete]
+        [HttpGet]
         public IActionResult DeleteDestinationById(int Id)
         {
             _destinationManager.TDelete(_destinationManager.TGetById(Id));

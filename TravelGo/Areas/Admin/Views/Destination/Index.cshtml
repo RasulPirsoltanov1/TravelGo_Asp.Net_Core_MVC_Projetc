@@ -56,13 +56,12 @@
             <td>@item.City</td>
             <td>@item.Price</td>
             <td>@item.Capacity</td>
-            <td><a href="#">go to site </a></td>
-            <td><a href="#">delete </a></td>
-            <td><a href="#">edit </a></td>
+            <td><a asp-controller="Destination" asp-action="DestinationDetails" asp-route-Id="@item.DestinationId">go to site </a></td>
+            <td><a asp-controller="Destination" asp-area="admin" asp-action="DeleteDestinationById" asp-route-Id="@item.DestinationId">delete </a></td>
+            <td><a asp-controller="Destination" asp-area="admin" asp-action="UpdateDestinationById" asp-route-Id="@item.DestinationId">edit </a></td>
         </tr>
     }
 </table>
 <br />
 
-
-    <a asp-action="addDestination" asp-area="admin" asp-controller="Destination" class="btn btn-primary"> add new destination</a>
+<a asp-action="addDestination" asp-area="admin" asp-controller="Destination" class="btn btn-primary"> add new destination</a>
