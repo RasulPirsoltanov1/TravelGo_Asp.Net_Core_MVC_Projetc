@@ -1193,6 +1193,10 @@
       "PackagePath": "staticwebassets\\login_register\\colorlib-regform-26\\readme.txt"
     },
     {
+      "Id": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\wwwroot\\logs\\log.txt",
+      "PackagePath": "staticwebassets\\logs\\log.txt"
+    },
+    {
       "Id": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\wwwroot\\sneat-1.0.0\\.browserslistrc",
       "PackagePath": "staticwebassets\\sneat-1.0.0\\.browserslistrc"
     },

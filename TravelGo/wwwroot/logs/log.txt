@@ -1,0 +1,643 @@
+2023-08-02 20:07:20.785 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 20:07:21.067 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 20:07:21.079 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 20:07:21.085 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 20:07:21.087 +04:00 [INF] Hosting environment: Development
+2023-08-02 20:07:21.089 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 20:07:21.685 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 20:07:21.945 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 20:07:22.033 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 20:07:22.058 +04:00 [INF] Index page Invoke
+2023-08-02 20:07:22.066 +04:00 [ERR] Error Log Invoked
+2023-08-02 20:07:22.089 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 20:07:22.402 +04:00 [INF] Executed ViewResult - view Index executed in 319.4429ms.
+2023-08-02 20:07:22.411 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 359.899ms
+2023-08-02 20:07:22.414 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 20:07:22.452 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 200 - text/html;+charset=utf-8 771.4024ms
+2023-08-02 20:07:22.468 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 20:07:22.474 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 6.3378ms
+2023-08-02 20:07:22.487 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 20:07:22.513 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 26.0418ms
+2023-08-02 20:59:11.966 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 20:59:12.340 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 20:59:12.344 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 20:59:12.350 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 20:59:12.352 +04:00 [INF] Hosting environment: Development
+2023-08-02 20:59:12.355 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 20:59:12.615 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 20:59:13.804 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.ValidateSecurityStampAsync(ClaimsPrincipal principal)
+   at Microsoft.AspNetCore.Identity.SecurityStampValidator`1.ValidateAsync(CookieValidatePrincipalContext context)
+   at Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:9b8e5d94-0471-49af-8afe-70b81eaa1879
+Error Number:-2146893019,State:0,Class:20
+2023-08-02 20:59:13.981 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 500 - text/html;+charset=utf-8 1369.3942ms
+2023-08-02 20:59:14.000 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 20:59:14.001 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 20:59:14.020 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 18.9341ms
+2023-08-02 20:59:14.026 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.9482ms
+2023-08-02 21:00:24.952 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 21:00:24.985 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:00:25.007 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 21:00:25.024 +04:00 [INF] Index page Invoke
+2023-08-02 21:00:25.032 +04:00 [ERR] Error Log Invoked
+2023-08-02 21:00:25.057 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 21:00:25.178 +04:00 [INF] Executed ViewResult - view Index executed in 133.8756ms.
+2023-08-02 21:00:25.191 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 174.8012ms
+2023-08-02 21:00:25.204 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:00:25.219 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 200 - text/html;+charset=utf-8 266.8463ms
+2023-08-02 21:00:25.314 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:00:25.318 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 4.6929ms
+2023-08-02 21:00:25.336 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:00:25.348 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.9133ms
+2023-08-02 21:00:36.253 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:00:36.511 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 21:00:36.514 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 21:00:36.529 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:00:36.536 +04:00 [INF] Hosting environment: Development
+2023-08-02 21:00:36.538 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 21:00:37.068 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 21:00:37.329 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:00:37.371 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 21:00:37.415 +04:00 [INF] Index page Invoke
+2023-08-02 21:00:37.429 +04:00 [ERR] Error Log Invoked
+2023-08-02 21:00:37.447 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 21:00:37.601 +04:00 [INF] Executed ViewResult - view Index executed in 157.1081ms.
+2023-08-02 21:00:37.609 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 202.4138ms
+2023-08-02 21:00:37.615 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:00:37.639 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 200 - text/html;+charset=utf-8 574.4848ms
+2023-08-02 21:00:37.645 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:00:37.653 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:00:37.660 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 6.5740ms
+2023-08-02 21:00:37.673 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.8902ms
+2023-08-02 21:01:55.311 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:01:55.533 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 21:01:55.538 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 21:01:55.546 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:01:55.550 +04:00 [INF] Hosting environment: Development
+2023-08-02 21:01:55.552 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 21:01:56.006 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 21:01:56.133 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:01:56.146 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 21:01:56.155 +04:00 [INF] Index page Invoke
+2023-08-02 21:01:56.157 +04:00 [ERR] Error Log Invoked
+2023-08-02 21:01:56.166 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 21:01:56.267 +04:00 [INF] Executed ViewResult - view Index executed in 103.3576ms.
+2023-08-02 21:01:56.273 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 122.2043ms
+2023-08-02 21:01:56.276 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:01:56.291 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 200 - text/html;+charset=utf-8 287.8371ms
+2023-08-02 21:01:56.293 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:01:56.294 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:01:56.301 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 7.4159ms
+2023-08-02 21:01:56.315 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.1532ms
+2023-08-02 21:02:54.698 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:02:54.877 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 21:02:54.879 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 21:02:54.883 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:02:54.884 +04:00 [INF] Hosting environment: Development
+2023-08-02 21:02:54.886 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 21:02:55.094 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 21:02:55.229 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:02:55.243 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 21:02:55.250 +04:00 [INF] Index page Invoke
+2023-08-02 21:02:55.252 +04:00 [ERR] Error Log Invoked
+2023-08-02 21:02:55.260 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 21:02:55.363 +04:00 [INF] Executed ViewResult - view Index executed in 103.4141ms.
+2023-08-02 21:02:55.368 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 121.6385ms
+2023-08-02 21:02:55.371 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:02:55.384 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:02:55.384 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:02:55.385 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 200 - text/html;+charset=utf-8 292.9947ms
+2023-08-02 21:02:55.390 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 5.7565ms
+2023-08-02 21:02:55.399 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.5529ms
+2023-08-02 21:03:14.534 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 21:03:14.547 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:03:14.565 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 21:03:14.574 +04:00 [INF] Index page Invoke
+2023-08-02 21:03:14.578 +04:00 [ERR] Error Log Invoked
+2023-08-02 21:03:14.584 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 21:03:14.602 +04:00 [INF] Executed ViewResult - view Index executed in 17.525ms.
+2023-08-02 21:03:14.608 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 34.9419ms
+2023-08-02 21:03:14.613 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:03:14.618 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 200 - text/html;+charset=utf-8 83.7255ms
+2023-08-02 21:03:14.641 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:03:14.641 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:03:14.651 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 9.6673ms
+2023-08-02 21:03:14.681 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.5771ms
+2023-08-02 21:09:28.837 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:09:29.041 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 21:09:29.045 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 21:09:29.049 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:09:29.050 +04:00 [INF] Hosting environment: Development
+2023-08-02 21:09:29.051 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 21:09:29.215 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Home/Index - -
+2023-08-02 21:09:29.330 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:09:29.344 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 21:09:29.351 +04:00 [INF] Index page Invoke
+2023-08-02 21:09:29.352 +04:00 [ERR] Error Log Invoked
+2023-08-02 21:09:29.359 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 21:09:29.456 +04:00 [INF] Executed ViewResult - view Index executed in 98.2167ms.
+2023-08-02 21:09:29.462 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 114.1837ms
+2023-08-02 21:09:29.465 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 21:09:29.482 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Home/Index - - - 200 - text/html;+charset=utf-8 269.8265ms
+2023-08-02 21:09:29.494 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:09:29.494 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:09:29.501 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 7.0514ms
+2023-08-02 21:09:29.520 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.1465ms
+2023-08-02 21:12:30.504 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Login/SignIn?ReturnUrl=%2F - -
+2023-08-02 21:12:30.527 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:12:30.545 +04:00 [INF] Route matched with {action = "SignIn", controller = "Login", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller TravelGo.Controllers.LoginController (TravelGo).
+2023-08-02 21:12:30.627 +04:00 [INF] Executing ViewResult, running view SignIn.
+2023-08-02 21:12:31.499 +04:00 [INF] Executed ViewResult - view SignIn executed in 937.5294ms.
+2023-08-02 21:12:31.503 +04:00 [INF] Executed action TravelGo.Controllers.LoginController.SignIn (TravelGo) in 942.4744ms
+2023-08-02 21:12:31.507 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:12:31.512 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Login/SignIn?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 1008.4758ms
+2023-08-02 21:12:31.533 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:12:31.533 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:12:31.539 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 5.5924ms
+2023-08-02 21:12:31.557 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.0675ms
+2023-08-02 21:12:33.858 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:12:33.902 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 45.1947ms
+2023-08-02 21:12:35.808 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/admin/Destination/index - -
+2023-08-02 21:12:35.847 +04:00 [INF] Executing endpoint 'TravelGo.Areas.Admin.Controllers.DestinationController.Index (TravelGo)'
+2023-08-02 21:12:35.853 +04:00 [INF] Route matched with {area = "admin", action = "Index", controller = "Destination"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Areas.Admin.Controllers.DestinationController (TravelGo).
+2023-08-02 21:12:37.333 +04:00 [INF] Executed action TravelGo.Areas.Admin.Controllers.DestinationController.Index (TravelGo) in 1471.7561ms
+2023-08-02 21:12:37.343 +04:00 [INF] Executed endpoint 'TravelGo.Areas.Admin.Controllers.DestinationController.Index (TravelGo)'
+2023-08-02 21:12:37.360 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DataAccessLayer.Concrete.Repository.GenericRepository`1.GetList() in C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DataAccessLayer\Concrete\Repository\GenericRepository.cs:line 36
+   at BusinessLayer.Concrete.Main.GenericService`2.TGetList() in C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\BusinessLayer\Concrete\Main\GenericService.cs:line 39
+   at TravelGo.Areas.Admin.Controllers.DestinationController.Index() in C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\Areas\Admin\Controllers\DestinationController.cs:line 22
+   at lambda_method47(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:a0079d62-11de-44d1-83c2-60db356f95e5
+Error Number:-2146893019,State:0,Class:20
+2023-08-02 21:12:37.781 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/admin/Destination/index - - - 500 - text/html;+charset=utf-8 1972.6251ms
+2023-08-02 21:12:37.796 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:12:37.796 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:12:37.810 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 13.5501ms
+2023-08-02 21:12:37.816 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3312ms
+2023-08-02 21:12:57.432 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7279/Login/SignIn?ReturnUrl=%2F application/x-www-form-urlencoded 270
+2023-08-02 21:12:57.438 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:12:57.464 +04:00 [INF] Route matched with {action = "SignIn", controller = "Login", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(TravelGo.Models.UserSignInViewModel) on controller TravelGo.Controllers.LoginController (TravelGo).
+2023-08-02 21:12:57.740 +04:00 [INF] Executed action TravelGo.Controllers.LoginController.SignIn (TravelGo) in 270.0477ms
+2023-08-02 21:12:57.744 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:12:57.747 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TravelGo.Controllers.LoginController.SignIn(UserSignInViewModel userSignInViewModel) in C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\Controllers\LoginController.cs:line 68
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:6fa57375-3924-40bf-9acf-c58b5b45d2e9
+Error Number:-2146893019,State:0,Class:20
+2023-08-02 21:12:57.890 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7279/Login/SignIn?ReturnUrl=%2F application/x-www-form-urlencoded 270 - 500 - text/html;+charset=utf-8 458.7125ms
+2023-08-02 21:12:57.907 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:12:57.907 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:12:57.911 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 4.0510ms
+2023-08-02 21:12:57.928 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.7787ms
+2023-08-02 21:13:37.786 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 21:13:37.960 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 21:13:37.963 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 21:13:37.966 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 21:13:37.968 +04:00 [INF] Hosting environment: Development
+2023-08-02 21:13:37.969 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 21:13:38.275 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7279/Login/SignIn?ReturnUrl=%2F application/x-www-form-urlencoded 270
+2023-08-02 21:13:38.414 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:13:38.444 +04:00 [INF] Route matched with {action = "SignIn", controller = "Login", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(TravelGo.Models.UserSignInViewModel) on controller TravelGo.Controllers.LoginController (TravelGo).
+2023-08-02 21:13:39.418 +04:00 [INF] Executed action TravelGo.Controllers.LoginController.SignIn (TravelGo) in 967.0787ms
+2023-08-02 21:13:39.422 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:13:39.428 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TravelGo.Controllers.LoginController.SignIn(UserSignInViewModel userSignInViewModel) in C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\Controllers\LoginController.cs:line 68
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:5b8e0e8e-fcda-4e56-8810-090a1fd97881
+Error Number:-2146893019,State:0,Class:20
+2023-08-02 21:13:39.591 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7279/Login/SignIn?ReturnUrl=%2F application/x-www-form-urlencoded 270 - 500 - text/html;+charset=utf-8 1318.3890ms
+2023-08-02 21:13:39.611 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:13:39.612 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:13:39.618 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 6.5782ms
+2023-08-02 21:13:39.635 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.6432ms
+2023-08-02 21:13:48.947 +04:00 [INF] Request starting HTTP/2 POST https://localhost:7279/Login/SignIn?ReturnUrl=%2F application/x-www-form-urlencoded 270
+2023-08-02 21:13:48.966 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:13:48.970 +04:00 [INF] Route matched with {action = "SignIn", controller = "Login", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(TravelGo.Models.UserSignInViewModel) on controller TravelGo.Controllers.LoginController (TravelGo).
+2023-08-02 21:13:49.067 +04:00 [INF] Executed action TravelGo.Controllers.LoginController.SignIn (TravelGo) in 80.8643ms
+2023-08-02 21:13:49.072 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 21:13:49.078 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TravelGo.Controllers.LoginController.SignIn(UserSignInViewModel userSignInViewModel) in C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\Controllers\LoginController.cs:line 68
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:ba4d3517-432a-4768-abdf-ad798b0715ec
+Error Number:-2146893019,State:0,Class:20
+2023-08-02 21:13:49.283 +04:00 [INF] Request finished HTTP/2 POST https://localhost:7279/Login/SignIn?ReturnUrl=%2F application/x-www-form-urlencoded 270 - 500 - text/html;+charset=utf-8 336.2370ms
+2023-08-02 21:13:49.304 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 21:13:49.304 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 21:13:49.309 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 5.1119ms
+2023-08-02 21:13:49.349 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.3767ms
+2023-08-02 22:04:33.876 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 22:04:34.132 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 22:04:34.134 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 22:04:34.137 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 22:04:34.138 +04:00 [INF] Hosting environment: Development
+2023-08-02 22:04:34.139 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 22:04:34.269 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/memmber/Profile/Index - -
+2023-08-02 22:04:34.405 +04:00 [INF] Executing endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:04:34.426 +04:00 [INF] Route matched with {area = "memmber", action = "Index", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TravelGo.Areas.Memmber.Controllers.ProfileController (TravelGo).
+2023-08-02 22:04:35.540 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 22:04:35.663 +04:00 [INF] Executed ViewResult - view Index executed in 122.7882ms.
+2023-08-02 22:04:35.668 +04:00 [INF] Executed action TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo) in 1205.5904ms
+2023-08-02 22:04:35.669 +04:00 [INF] Executed endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:04:35.680 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/memmber/Profile/Index - - - 200 - text/html;+charset=utf-8 1413.7853ms
+2023-08-02 22:04:35.696 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - -
+2023-08-02 22:04:35.705 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:04:35.714 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 22:04:35.716 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 1.9482ms
+2023-08-02 22:04:35.717 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:04:35.721 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - -
+2023-08-02 22:04:35.729 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:04:35.732 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:04:35.733 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:04:35.735 +04:00 [INF] Executed ViewResult - view Error404 executed in 6.7709ms.
+2023-08-02 22:04:35.737 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:04:35.737 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 17.9673ms
+2023-08-02 22:04:35.739 +04:00 [INF] Executed ViewResult - view Error404 executed in 2.0507ms.
+2023-08-02 22:04:35.739 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - -
+2023-08-02 22:04:35.740 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:04:35.741 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 5.1401ms
+2023-08-02 22:04:35.746 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:04:35.747 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - - - 404 - text/html;+charset=utf-8 50.6624ms
+2023-08-02 22:04:35.748 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:04:35.749 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:04:35.752 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - - - 404 - text/html;+charset=utf-8 30.9472ms
+2023-08-02 22:04:35.754 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:04:35.757 +04:00 [INF] Executed ViewResult - view Error404 executed in 2.5366ms.
+2023-08-02 22:04:35.758 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 3.7304ms
+2023-08-02 22:04:35.762 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:04:35.763 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - - - 404 - text/html;+charset=utf-8 23.9466ms
+2023-08-02 22:08:43.508 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 22:08:43.755 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 22:08:43.758 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 22:08:43.762 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 22:08:43.765 +04:00 [INF] Hosting environment: Development
+2023-08-02 22:08:43.766 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 22:08:43.999 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/memmber/Profile/Index - -
+2023-08-02 22:08:44.154 +04:00 [INF] Executing endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:08:44.198 +04:00 [INF] Route matched with {area = "memmber", action = "Index", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TravelGo.Areas.Memmber.Controllers.ProfileController (TravelGo).
+2023-08-02 22:08:45.609 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 22:08:45.750 +04:00 [INF] Executed ViewResult - view Index executed in 137.7308ms.
+2023-08-02 22:08:45.755 +04:00 [INF] Executed action TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo) in 1554.3712ms
+2023-08-02 22:08:45.757 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - -
+2023-08-02 22:08:45.757 +04:00 [INF] Executed endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:08:45.765 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:08:45.769 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/memmber/Profile/Index - - - 200 - text/html;+charset=utf-8 1775.2191ms
+2023-08-02 22:08:45.772 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 22:08:45.773 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 1.8969ms
+2023-08-02 22:08:45.775 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:08:45.785 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:08:45.792 +04:00 [INF] Executed ViewResult - view Error404 executed in 7.7791ms.
+2023-08-02 22:08:45.793 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 16.6902ms
+2023-08-02 22:08:45.794 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:08:45.796 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - - - 404 - text/html;+charset=utf-8 39.2074ms
+2023-08-02 22:08:45.796 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - -
+2023-08-02 22:08:45.797 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - -
+2023-08-02 22:08:45.808 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:08:45.808 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:08:45.809 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:08:45.810 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:08:45.813 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:08:45.814 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:08:45.815 +04:00 [INF] Executed ViewResult - view Error404 executed in 2.1316ms.
+2023-08-02 22:08:45.816 +04:00 [INF] Executed ViewResult - view Error404 executed in 1.9407ms.
+2023-08-02 22:08:45.817 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 4.7592ms
+2023-08-02 22:08:45.818 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 4.0345ms
+2023-08-02 22:08:45.819 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:08:45.819 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:08:45.820 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - - - 404 - text/html;+charset=utf-8 23.5189ms
+2023-08-02 22:08:45.822 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - - - 404 - text/html;+charset=utf-8 25.5101ms
+2023-08-02 22:10:26.330 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/memmber/Profile/Index - -
+2023-08-02 22:10:26.335 +04:00 [INF] Executing endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:10:26.337 +04:00 [INF] Route matched with {area = "memmber", action = "Index", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TravelGo.Areas.Memmber.Controllers.ProfileController (TravelGo).
+2023-08-02 22:10:26.429 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 22:10:26.436 +04:00 [INF] Executed ViewResult - view Index executed in 7.6724ms.
+2023-08-02 22:10:26.439 +04:00 [INF] Executed action TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo) in 99.8132ms
+2023-08-02 22:10:26.441 +04:00 [INF] Executed endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:10:26.443 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/memmber/Profile/Index - - - 200 - text/html;+charset=utf-8 113.4479ms
+2023-08-02 22:10:26.451 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - -
+2023-08-02 22:10:26.456 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:10:26.458 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:10:26.462 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:10:26.465 +04:00 [INF] Executed ViewResult - view Error404 executed in 2.4307ms.
+2023-08-02 22:10:26.476 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 14.1779ms
+2023-08-02 22:10:26.478 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 22:10:26.478 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:10:26.480 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - -
+2023-08-02 22:10:26.480 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 2.2774ms
+2023-08-02 22:10:26.481 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - - - 404 - text/html;+charset=utf-8 29.5816ms
+2023-08-02 22:10:26.483 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:10:26.487 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:10:26.490 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:10:26.492 +04:00 [INF] Executed ViewResult - view Error404 executed in 1.6367ms.
+2023-08-02 22:10:26.494 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 3.7944ms
+2023-08-02 22:10:26.496 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:10:26.496 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - -
+2023-08-02 22:10:26.497 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - - - 404 - text/html;+charset=utf-8 16.5702ms
+2023-08-02 22:10:26.500 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:10:26.503 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:10:26.506 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:10:26.508 +04:00 [INF] Executed ViewResult - view Error404 executed in 2.1163ms.
+2023-08-02 22:10:26.510 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 4.2804ms
+2023-08-02 22:10:26.512 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:10:26.514 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - - - 404 - text/html;+charset=utf-8 17.1994ms
+2023-08-02 22:13:37.991 +04:00 [INF] User profile is available. Using 'C:\Users\resul\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 22:13:38.222 +04:00 [INF] Now listening on: https://localhost:7279
+2023-08-02 22:13:38.223 +04:00 [INF] Now listening on: http://localhost:5028
+2023-08-02 22:13:38.228 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-02 22:13:38.230 +04:00 [INF] Hosting environment: Development
+2023-08-02 22:13:38.231 +04:00 [INF] Content root path: C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\
+2023-08-02 22:13:38.375 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/memmber/Profile/Index - -
+2023-08-02 22:13:38.579 +04:00 [INF] Executing endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:13:38.609 +04:00 [INF] Route matched with {area = "memmber", action = "Index", controller = "Profile"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller TravelGo.Areas.Memmber.Controllers.ProfileController (TravelGo).
+2023-08-02 22:13:40.369 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 22:13:40.534 +04:00 [INF] Executed ViewResult - view Index executed in 165.5794ms.
+2023-08-02 22:13:40.538 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - -
+2023-08-02 22:13:40.539 +04:00 [INF] Executed action TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo) in 1927.4101ms
+2023-08-02 22:13:40.541 +04:00 [INF] Executed endpoint 'TravelGo.Areas.Memmber.Controllers.ProfileController.Index (TravelGo)'
+2023-08-02 22:13:40.551 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:13:40.556 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 22:13:40.557 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/memmber/Profile/Index - - - 200 - text/html;+charset=utf-8 2185.9033ms
+2023-08-02 22:13:40.558 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 2.7724ms
+2023-08-02 22:13:40.566 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:13:40.568 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - -
+2023-08-02 22:13:40.582 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:13:40.583 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:13:40.586 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:13:40.590 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:13:40.591 +04:00 [INF] Executed ViewResult - view Error404 executed in 10.416ms.
+2023-08-02 22:13:40.591 +04:00 [INF] Executed ViewResult - view Error404 executed in 1.6804ms.
+2023-08-02 22:13:40.593 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 24.0911ms
+2023-08-02 22:13:40.594 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 5.6738ms
+2023-08-02 22:13:40.595 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - -
+2023-08-02 22:13:40.595 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:13:40.597 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:13:40.598 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:13:40.600 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://kit.fontawesome.com/42d5adcbca.js - - - 404 - text/html;+charset=utf-8 62.3519ms
+2023-08-02 22:13:40.602 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://api.nepcha.com/js/nepcha-analytics.js - - - 404 - text/html;+charset=utf-8 34.3611ms
+2023-08-02 22:13:40.603 +04:00 [INF] Route matched with {action = "Error404", controller = "ErrorPage", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error404(System.Nullable`1[System.Int32]) on controller TravelGo.Controllers.ErrorPageController (TravelGo).
+2023-08-02 22:13:40.608 +04:00 [INF] Executing ViewResult, running view Error404.
+2023-08-02 22:13:40.610 +04:00 [INF] Executed ViewResult - view Error404 executed in 1.9858ms.
+2023-08-02 22:13:40.611 +04:00 [INF] Executed action TravelGo.Controllers.ErrorPageController.Error404 (TravelGo) in 3.5986ms
+2023-08-02 22:13:40.613 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.ErrorPageController.Error404 (TravelGo)'
+2023-08-02 22:13:40.614 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/soft-ui-dashboard-main/https://buttons.github.io/buttons.js - - - 404 - text/html;+charset=utf-8 19.1164ms
+2023-08-02 22:13:51.027 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/Login/SignIn - -
+2023-08-02 22:13:51.041 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 22:13:51.046 +04:00 [INF] Route matched with {action = "SignIn", controller = "Login", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignIn() on controller TravelGo.Controllers.LoginController (TravelGo).
+2023-08-02 22:13:51.054 +04:00 [INF] Executing ViewResult, running view SignIn.
+2023-08-02 22:13:51.171 +04:00 [INF] Executed ViewResult - view SignIn executed in 119.4137ms.
+2023-08-02 22:13:51.175 +04:00 [INF] Executed action TravelGo.Controllers.LoginController.SignIn (TravelGo) in 124.8644ms
+2023-08-02 22:13:51.176 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.LoginController.SignIn (TravelGo)'
+2023-08-02 22:13:51.182 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/Login/SignIn - - - 200 - text/html;+charset=utf-8 154.9642ms
+2023-08-02 22:13:51.199 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 22:13:51.201 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 22:13:51.202 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 3.5650ms
+2023-08-02 22:13:51.240 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.3566ms
+2023-08-02 22:13:54.756 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/ - -
+2023-08-02 22:13:54.759 +04:00 [INF] Executing endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 22:13:54.763 +04:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller TravelGo.Controllers.HomeController (TravelGo).
+2023-08-02 22:13:54.768 +04:00 [INF] Index page Invoke
+2023-08-02 22:13:54.770 +04:00 [ERR] Error Log Invoked
+2023-08-02 22:13:54.773 +04:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 22:13:54.814 +04:00 [INF] Executed ViewResult - view Index executed in 42.1278ms.
+2023-08-02 22:13:54.817 +04:00 [INF] Executed action TravelGo.Controllers.HomeController.Index (TravelGo) in 51.9907ms
+2023-08-02 22:13:54.823 +04:00 [INF] Executed endpoint 'TravelGo.Controllers.HomeController.Index (TravelGo)'
+2023-08-02 22:13:54.826 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/ - - - 200 - text/html;+charset=utf-8 70.4083ms
+2023-08-02 22:13:54.840 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 22:13:54.840 +04:00 [INF] Request starting HTTP/2 GET https://localhost:7279/_vs/browserLink - -
+2023-08-02 22:13:54.848 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 8.1775ms
+2023-08-02 22:13:54.860 +04:00 [INF] Request finished HTTP/2 GET https://localhost:7279/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.8146ms
+2023-08-02 22:18:00.100 +04:00 [ERR] Error Log Invoked
+2023-08-02 22:18:05.289 +04:00 [ERR] Error Log Invoked

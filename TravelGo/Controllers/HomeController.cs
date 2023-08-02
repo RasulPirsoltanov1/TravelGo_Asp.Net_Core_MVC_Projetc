@@ -15,11 +15,15 @@ namespace TravelGo.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Index page Invoke");
+            _logger.LogError("Error Log Invoked");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            var d = DateTime.Now;
+            _logger.LogInformation(d+ " Privacy page Invoke");
             return View();
         }
 

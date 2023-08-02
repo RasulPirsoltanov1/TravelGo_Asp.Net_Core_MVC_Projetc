@@ -8,6 +8,7 @@ using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using Serilog;
 using TravelGo.Models.CustomIdentityValidator;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +21,11 @@ builder.Services.AddIdentity<AppUser, AppRole>()
     .AddErrorDescriber<CustomIdentityValidator>();
 
 builder.Services.ContainerDependencies();
+
+builder.Host.UseSerilog((ctx, lc) => lc
+    .WriteTo.Console().WriteTo.File("wwwroot/logs/log.txt").WriteTo.MSSqlServer(@"Server=DESKTOP-UGCLLOE\\MSSQLSERVER2;Database=TravelGoDB;integrated security=true;", "Logs", autoCreateSqlTable: true).MinimumLevel.Error()
+    .ReadFrom.Configuration(builder.Configuration));
+
 
 builder.Services.AddMvc(config =>
 {
