@@ -1197,6 +1197,10 @@
       "PackagePath": "staticwebassets\\logs\\log.txt"
     },
     {
+      "Id": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\wwwroot\\pdf_reports\\customer.pdf",
+      "PackagePath": "staticwebassets\\pdf_reports\\customer.pdf"
+    },
+    {
       "Id": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\wwwroot\\sneat-1.0.0\\.browserslistrc",
       "PackagePath": "staticwebassets\\sneat-1.0.0\\.browserslistrc"
     },

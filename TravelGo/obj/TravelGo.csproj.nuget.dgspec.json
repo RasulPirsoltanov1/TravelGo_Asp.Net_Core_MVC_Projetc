@@ -392,6 +392,10 @@
             "Serilog.Sinks.MSSqlServer": {
               "target": "Package",
               "version": "[6.3.0, )"
+            },
+            "iTextSharp.LGPLv2.Core": {
+              "target": "Package",
+              "version": "[3.4.3, )"
             }
           },
           "imports": [

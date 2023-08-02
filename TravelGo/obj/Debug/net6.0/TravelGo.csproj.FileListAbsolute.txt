@@ -819,3 +819,12 @@ C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\Tr
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\SixLabors.Fonts.dll
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\System.IO.Packaging.dll
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\XLParser.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\iTextSharp.LGPLv2.Core.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\SkiaSharp.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
