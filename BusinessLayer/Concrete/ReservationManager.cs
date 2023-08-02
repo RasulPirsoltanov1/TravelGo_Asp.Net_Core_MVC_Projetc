@@ -9,13 +9,14 @@ namespace BusinessLayer.Concrete
 {
     public class ReservationManager : GenericService<Reservation, IReservationDal>, IReservationService
     {
-        IReservationDal tdal;
+        IReservationDal _tdal;
         public ReservationManager(IReservationDal tdal) : base(tdal)
         {
+            _tdal = tdal;
         }
         public List<Reservation> GetAllReservationsWithDestination(Expression<Func<Reservation, bool>> expression)
         {
-            return tdal.GetAllReservationsWithDestination(expression);
+            return _tdal.GetAllReservationsWithDestination(expression);
         }
     }
 }

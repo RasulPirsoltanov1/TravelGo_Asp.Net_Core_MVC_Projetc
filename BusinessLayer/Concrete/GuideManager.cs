@@ -1,12 +1,14 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.Concrete.Main;
+using DataAccessLayer.Concrete.Abstract;
 using DataAccessLayer.Concrete.EntityFramework;
 using EntityLayer.Concrete;
 
 namespace BusinessLayer.Concrete
 {
-    public class GuideManager : Manager<Guide, EfGuideDal>, IGuideService
+    public class GuideManager : GenericService<Guide, IGuideDal>, IGuideService
     {
-        public GuideManager(EfGuideDal dal) : base(dal)
+        public GuideManager(IGuideDal tdal) : base(tdal)
         {
         }
     }

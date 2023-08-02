@@ -1,0 +1,52 @@
+﻿@using EntityLayer.Concrete;
+@model List<Guide>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <h1>Guide List</h1>
+    <table class="table table-striped table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Image</th>
+                <th>UserName</th>
+                <th>About</th>
+                <th>Status</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.GuideId</td>
+                    <td><img style="width:100px; border-radius:50%;" src="@item.Image" /></td>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td>
+                        @if (item.Status)
+                        {
+                            <a class="btn btn-success" style="color:white;">Do Active</a>
+                        }
+                        @if (!item.Status)
+                        {
+                        <a class="btn btn-danger" style="color:white;">Do Passive</a>
+
+                        }
+                        </td >
+                    <td><a class="btn btn-primary" style="color:white;">Edit</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+<div class="buy-now">
+    <a asp-action="AddGuide" asp-controller="Guide" asp-area="admin"
+       target="_blank"
+       class="btn btn-success btn-buy-now">Add new Guide</a>
+</div>

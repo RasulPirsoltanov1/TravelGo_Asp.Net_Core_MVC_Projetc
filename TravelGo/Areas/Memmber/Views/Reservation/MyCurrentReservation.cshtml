@@ -76,21 +76,26 @@
     </tr>
     @{
         int s = 1;
+
     }
-    @foreach (var item in Model)
+    @if (Model.Count>0)
     {
-        <tr>
-            <td>@(s++)</td>
-            <td>@item.Destination.City</td>
-            <td>@item.PersonCount</td>
-            <td>@item.ReservationDate</td>
-            <td>@item.Status</td>
-            <td>
-                <button>Edit</button>
-                <button>Delete</button>
-            </td>
-        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@(s++)</td>
+                <td>@item.Destination?.City</td>
+                <td>@item.PersonCount</td>
+                <td>@item.ReservationDate</td>
+                <td>@item.Status</td>
+                <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </td>
+            </tr>
+        }
     }
+
 </table>
 
 
