@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.Abstract.Utilities;
 using ClosedXML.Excel;
 using Microsoft.AspNetCore.Mvc;
 using OfficeOpenXml;
@@ -9,10 +10,11 @@ namespace TravelGo.Controllers
     public class ExcelController : Controller
     {
         IDestinationService destinationService;
-
-        public ExcelController(IDestinationService destinationService)
+        IExcelService _excelService;
+        public ExcelController(IDestinationService destinationService, IExcelService excelService)
         {
             this.destinationService = destinationService;
+            _excelService = excelService;
         }
 
         public IActionResult Index()
@@ -31,30 +33,9 @@ namespace TravelGo.Controllers
         }
         public IActionResult DestinationExcelReport()
         {
-            using (var workBook = new XLWorkbook())
-            {
-                var workSheet = workBook.Worksheets.Add("Tour List");
-                workSheet.Cell(1, 1).Value = "City";
-                workSheet.Cell(1, 2).Value = "Day & Night";
-                workSheet.Cell(1, 3).Value = "Price";
-                workSheet.Cell(1, 4).Value = "Capacity";
-                int rowCount = 2;
-                foreach (var item in DestinationList())
-                {
-                    workSheet.Cell(rowCount, 1).Value = item.City;
-                    workSheet.Cell(rowCount, 2).Value = item.DayNight;
-                    workSheet.Cell(rowCount, 3).Value = item.Price;
-                    workSheet.Cell(rowCount, 4).Value = item.Capacity;
-                    rowCount++;
-                }
+            var content = _excelService.DestinationExcelLis(DestinationList());
 
-                using (var stream = new MemoryStream())
-                {
-                    workBook.SaveAs(stream);
-                    var content = stream.ToArray();
-                    return File(content,"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet","New_List.xlsx");
-                }
-            }
+            return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "New_List.xlsx");
         }
     }
 }

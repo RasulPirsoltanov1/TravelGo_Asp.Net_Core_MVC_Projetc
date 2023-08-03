@@ -60,6 +60,16 @@ namespace TravelGo.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult ChangeStatus(int id)
         {
+            Guide guide = _guideService.TGetById(id);
+            if (guide.Status == true)
+            {
+                guide.Status = false; 
+            }
+            else
+            {
+                guide.Status = true;
+            }
+            _guideService.TUpdate(guide);
             return RedirectToAction(nameof(Index));
         }
     }

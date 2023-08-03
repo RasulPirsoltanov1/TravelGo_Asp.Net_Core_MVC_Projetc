@@ -29,11 +29,11 @@
                     <td>
                         @if (item.Status)
                         {
-                            <a class="btn btn-success" style="color:white;">Do Active</a>
+                            <a class="btn btn-success" style="color:white;" asp-action="ChangeStatus" asp-controller="Guide" asp-route-id="@item.GuideId" asp-area="Admin">Active</a>
                         }
                         @if (!item.Status)
                         {
-                        <a class="btn btn-danger" style="color:white;">Do Passive</a>
+                            <a class="btn btn-danger" style="color:white;" asp-action="ChangeStatus" asp-controller="Guide" asp-route-id="@item.GuideId" asp-area="Admin">Passive</a>
 
                         }
                         </td >

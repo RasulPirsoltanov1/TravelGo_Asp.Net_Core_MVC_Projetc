@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Abstract;
+using BusinessLayer.Abstract.Utilities;
 using BusinessLayer.Concrete;
+using BusinessLayer.Concrete.Utilities;
 using DataAccessLayer.Concrete.Abstract;
 using DataAccessLayer.Concrete.EntityFramework;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,6 +27,7 @@ namespace BusinessLayer.Container
             Services.AddScoped<IReservationService, ReservationManager>();
             Services.AddScoped<IGuideDal, EfGuideDal>();
             Services.AddScoped<IGuideService, GuideManager>();
+            Services.AddScoped<IExcelService, ExcelManager>();
         }
     }
 }

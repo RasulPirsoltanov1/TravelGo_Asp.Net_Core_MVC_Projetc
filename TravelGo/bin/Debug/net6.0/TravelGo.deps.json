@@ -3218,6 +3218,7 @@
       },
       "BusinessLayer/1.0.0": {
         "dependencies": {
+          "ClosedXML": "0.102.0",
           "DataAccessLayer": "1.0.0",
           "EntityLayer": "1.0.0",
           "FluentValidation": "11.6.0",
