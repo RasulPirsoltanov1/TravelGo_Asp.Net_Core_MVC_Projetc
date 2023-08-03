@@ -1,0 +1,34 @@
+﻿@using TravelGo.Models;
+@model MailRequest
+@{
+    ViewData["Title"] = "Send";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h1>Send Mail</h1>
+<div asp-validation-summary="All" style="color:red;"></div>
+<form method="post">
+
+    <div class="form-group">
+        <label for="PersonCount">Name</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="PersonCount">Mail To:</label>
+        <input type="text" asp-for="MailReceiver" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="PersonCount">Subject </label>
+        <input type="text" asp-for="Subject" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="PersonCount">Body </label>
+        <textarea type="text" asp-for="Body" class="form-control" ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+
+
