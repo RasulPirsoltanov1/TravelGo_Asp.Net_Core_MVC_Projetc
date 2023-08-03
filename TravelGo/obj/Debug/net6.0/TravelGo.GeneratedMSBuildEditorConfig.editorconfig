@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Areas/Admin/Views/City/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2l0eVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/resul/OneDrive/Masaüstü/Projects/TravelGo_Asp.Net_Core_MVC_Projetc/TravelGo/Areas/Admin/Views/Comment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29tbWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

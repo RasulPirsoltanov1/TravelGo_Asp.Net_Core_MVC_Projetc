@@ -1,0 +1,181 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    #cityListArea {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+        #cityListArea th, #cityListArea td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        #cityListArea th {
+            background-color: #f2f2f2;
+        }
+
+    .div {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+        input[type="number"] {
+            width: 100px;
+        }
+
+            input[type="text"]::placeholder,
+            input[type="number"]::placeholder {
+                color: #999;
+            }
+
+            input[type="text"]:focus,
+            input[type="number"]:focus {
+                border-color: #007bff;
+                box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+            }
+</style>
+<h1>Index</h1>
+
+<button type="button" id="cityList" onclick="listCity()" class="btn btn-outline-info"> Get List of City </button>
+<input type="number" id="cityId" />
+<button type="button" id="cityById" class="btn btn-outline-warning"> Get City </button>
+<div id="cityArea"></div>
+
+<div class="div">
+    <input type="text" id="txtCity" placeholder="City" />
+    <br />
+    <input type="text" id="txtDayNight" placeholder="txtDayNight" /><br />
+
+    <input type="number" id="txtPrice" placeholder="txtPrice" /><br />
+    <input type="text" id="txtImage" placeholder="txtImage" /><br />
+    <input type="text" id="txtImage2" placeholder="txtImage2" /><br />
+    <input type="text" id="txtDescription" placeholder="txtDescription" /><br />
+    <input type="number" id="txtCapacity" placeholder="txtCapacity" /><br />
+    <input type="text" id="txtcoverImage" placeholder="txtcoverImage" /><br />
+    <input type="text" id="txtDetails1" placeholder="txtDetails1" /><br />
+    <input type="text" id="txtDetails2" placeholder="txtDetails2" /><br />
+    <button type="button" id="addCity" class="btn btn-outline-success"> Add City </button>
+</div>
+
+<hr />
+<table id="cityListArea">
+    <tr>
+        <th>City</th>
+        <th>Day & Night</th>
+        <th>Price</th>
+    </tr>
+
+    <!-- Add more rows here -->
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    let x = 0;
+    let firstData = null;
+
+    function listCity() {
+
+        if (true) {
+            $.get("/admin/city/CityList", function (data, status) {
+                if (firstData != data) {
+                    x = 1;
+                    firstData = data;
+                    const jsObject = JSON.parse(data);
+                    const area = document.querySelector("#cityListArea");
+                    let count = 0;
+                    area.innerHTML = "";
+                    for (let item in jsObject) {
+                        console.log(item);
+                        area.innerHTML += `<tr>
+                                                                             <td>${jsObject[item].City}  </td>
+                                                                        <td>${jsObject[item].DayNight} </td>
+                                                                                <td>${jsObject[item].Price}$ </td>
+                                                                    </tr>`;
+                        count++;
+                    }
+                }
+
+            });
+        }
+        else {
+            alert("data prepared.");
+        }
+    }
+
+    $("#addCity").click(function () {
+        debugger;
+        let dataToSend = {
+            City: $("#txtCity").val(),
+            DayNight: $("#txtDayNight").val(),
+            Price: $("#txtPrice").val(),
+            Image: $("#txtImage").val(),
+            Image2: $("#txtImage2").val(),
+            Description: $("#txtDescription").val(),
+            Capacity: $("#txtCapacity").val(),
+            status: true,
+            coverImage: $("#txtcoverImage").val(),
+            Details1: $("#txtDetails1").val(),
+            Details2: $("#txtDetails2").val(),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/admin/city/add",
+            data: JSON.stringify(dataToSend),
+            contentType: "application/json",
+            success: function (response) {
+                // The response here is already a JavaScript object
+                // You can access the properties directly
+                $("#result").html("City added: " + response.City);
+                listCity();
+            },
+            error: function (error) {
+                $("#result").html("Error: " + JSON.stringify(error));
+            }
+        });
+    });
+
+    $("#cityById").click(x => {
+        let id = parseInt($("#cityId").val());
+        $.ajax({
+            type: "GET", // Use "GET" instead of "Get"
+            url: "/admin/city/getbyid",
+            data: { DestinationId: id }, // Pass the data as an object directly
+            success: function (response) {
+                let jsObject = JSON.parse(response);
+                let cityHtml = `<table id="cityListArea">
+                <tr>
+                    <th>City</th>
+                    <th>Day & Night</th>
+                    <th>Price</th>
+                </tr>
+            <tr>
+                                                                                 <td>${jsObject.City}  </td>
+                                                                            <td>${jsObject.DayNight} </td>
+                                                                                    <td>${jsObject.Price}$ </td>
+                                                                        </tr>
+            </table>`;
+                document.querySelector("#cityArea").innerHTML = cityHtml;
+            }
+        });
+    });
+</script>
+
+
+
+
+
