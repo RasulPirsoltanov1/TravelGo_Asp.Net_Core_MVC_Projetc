@@ -58,5 +58,12 @@ namespace TravelGo.Areas.Admin.Controllers
             var json = JsonConvert.SerializeObject(_destinationService.TGetById(DestinationId));
             return Json(json);
         }
+
+        public IActionResult Delete([FromQuery] int DestinationId)
+        {
+            var json = _destinationService.TGetById(DestinationId);
+            _destinationService.TDelete(json);
+            return Json("deleted");
+        }
     }
 }

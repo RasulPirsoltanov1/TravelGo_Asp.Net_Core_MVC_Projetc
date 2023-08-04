@@ -77,6 +77,8 @@
         <th>City</th>
         <th>Day & Night</th>
         <th>Price</th>
+        <th>delete</th>
+        <th>update</th>
     </tr>
 
     <!-- Add more rows here -->
@@ -97,14 +99,22 @@
                     const jsObject = JSON.parse(data);
                     const area = document.querySelector("#cityListArea");
                     let count = 0;
-                    area.innerHTML = "";
+                    area.innerHTML = ` <tr>
+                                    <th>City</th>
+                                    <th>Day & Night</th>
+                                    <th>Price</th>
+                                        <th>delete</th>
+                                        <th>update</th>
+                                </tr>`;
                     for (let item in jsObject) {
                         console.log(item);
                         area.innerHTML += `<tr>
-                                                                             <td>${jsObject[item].City}  </td>
-                                                                        <td>${jsObject[item].DayNight} </td>
-                                                                                <td>${jsObject[item].Price}$ </td>
-                                                                    </tr>`;
+                                                                                                         <td>${jsObject[item].City}  </td>
+                                                                                                    <td>${jsObject[item].DayNight} </td>
+                                                                                                                <td>${jsObject[item].Price}$ </td>
+                                                                                                                        <td> <button onclick="deleteBtn(${jsObject[item].DestinationId})" class="btn btn-danger"> Delete </button> </td>
+                                                                                                                                            <td>  <a class="btn btn-primary" href="/admin/Destination/UpdateDestinationById?Id=${jsObject[item].DestinationId}"> update</a> </td>
+                                                                                                </tr>`;
                         count++;
                     }
                 }
@@ -158,21 +168,33 @@
             success: function (response) {
                 let jsObject = JSON.parse(response);
                 let cityHtml = `<table id="cityListArea">
-                <tr>
-                    <th>City</th>
-                    <th>Day & Night</th>
-                    <th>Price</th>
-                </tr>
-            <tr>
-                                                                                 <td>${jsObject.City}  </td>
-                                                                            <td>${jsObject.DayNight} </td>
-                                                                                    <td>${jsObject.Price}$ </td>
-                                                                        </tr>
-            </table>`;
+                                            <tr>
+                                                <th>City</th>
+                                                <th>Day & Night</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        <tr>
+                                                                                                             <td>${jsObject.City}  </td>
+                                                                                                        <td>${jsObject.DayNight} </td>
+                                                                                                                <td>${jsObject.Price}$ </td>
+                                                                                                    </tr>
+                                        </table>`;
                 document.querySelector("#cityArea").innerHTML = cityHtml;
             }
         });
     });
+    function deleteBtn(id) {
+        $.ajax({
+            type: "GET", // Use "GET" instead of "Get"
+            url: "/admin/city/delete",
+            data: { DestinationId: id }, // Pass the data as an object directly
+            success: function (response) {
+                listCity();
+                console.log(response);
+            }
+        });
+
+    }
 </script>
 
 
