@@ -8,5 +8,4 @@ namespace DataAccessLayer.Concrete.EntityFramework
     {
 
     }
-
 }

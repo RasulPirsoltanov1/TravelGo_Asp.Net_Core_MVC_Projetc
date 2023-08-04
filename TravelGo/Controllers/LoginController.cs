@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concrete;
+﻿using DTOLayer.DTOs.AppUsrDTOs;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -24,7 +25,7 @@ namespace TravelGo.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> SignUpAsync(RegisterViewModel registerViewModel)
+        public async Task<IActionResult> SignUpAsync(AppUserRegisterDTO registerViewModel)
         {
             if (ModelState.IsValid)
             {
@@ -50,6 +51,10 @@ namespace TravelGo.Controllers
                             ModelState.AddModelError(string.Empty, error.Description);
                         }
                     }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "password and cofirmpassword does not match .");
                 }
             }
 

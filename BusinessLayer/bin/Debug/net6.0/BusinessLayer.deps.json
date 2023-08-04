@@ -9,6 +9,7 @@
       "BusinessLayer/1.0.0": {
         "dependencies": {
           "ClosedXML": "0.102.0",
+          "DTOLayer": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "EntityLayer": "1.0.0",
           "FluentValidation": "11.6.0",
@@ -1272,6 +1273,11 @@
           "DataAccessLayer.dll": {}
         }
       },
+      "DTOLayer/1.0.0": {
+        "runtime": {
+          "DTOLayer.dll": {}
+        }
+      },
       "EntityLayer/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.20",
@@ -2187,6 +2193,11 @@
       "hashPath": "xlparser.1.5.2.nupkg.sha512"
     },
     "DataAccessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DTOLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelGo", "TravelGo.csproj", "{25D7CE36-534D-4522-8E32-7F363B7C93E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelGo", "TravelGo.csproj", "{25D7CE36-534D-4522-8E32-7F363B7C93E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "..\EntityLayer\EntityLayer.csproj", "{5177D031-5DEF-4456-A778-FC2CBCA7FB1D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityLayer", "..\EntityLayer\EntityLayer.csproj", "{5177D031-5DEF-4456-A778-FC2CBCA7FB1D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{EAC625C9-E7C1-4C23-9BA7-AF6783AE7232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "..\DataAccessLayer\DataAccessLayer.csproj", "{EAC625C9-E7C1-4C23-9BA7-AF6783AE7232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "..\BusinessLayer\BusinessLayer.csproj", "{105161DD-B268-431E-8CFC-793E54307A69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "..\BusinessLayer\BusinessLayer.csproj", "{105161DD-B268-431E-8CFC-793E54307A69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOLayer", "..\DTOLayer\DTOLayer.csproj", "{50C5A222-51D4-400A-B7D1-AC6CE93AE491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{105161DD-B268-431E-8CFC-793E54307A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{105161DD-B268-431E-8CFC-793E54307A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{105161DD-B268-431E-8CFC-793E54307A69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C5A222-51D4-400A-B7D1-AC6CE93AE491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C5A222-51D4-400A-B7D1-AC6CE93AE491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C5A222-51D4-400A-B7D1-AC6CE93AE491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C5A222-51D4-400A-B7D1-AC6CE93AE491}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

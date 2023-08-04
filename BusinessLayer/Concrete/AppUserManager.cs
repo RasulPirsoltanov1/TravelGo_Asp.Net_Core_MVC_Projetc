@@ -19,4 +19,10 @@ namespace BusinessLayer.Concrete
         {
         }
     }
+    public class ContactUsManager : GenericService<ContactUs, IContactUsDal>, IContactUsService
+    {
+        public ContactUsManager(IContactUsDal tdal) : base(tdal)
+        {
+        }
+    }
 }

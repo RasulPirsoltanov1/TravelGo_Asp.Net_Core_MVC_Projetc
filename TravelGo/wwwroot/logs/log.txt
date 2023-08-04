@@ -2623,3 +2623,6 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'entity')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-08-04 14:08:19.820 +04:00 [ERR] Error Log Invoked
+2023-08-04 14:10:50.390 +04:00 [ERR] Error Log Invoked
+2023-08-04 16:41:46.518 +04:00 [ERR] Error Log Invoked

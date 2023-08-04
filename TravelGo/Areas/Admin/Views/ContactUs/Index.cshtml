@@ -1,0 +1,74 @@
+﻿@using EntityLayer.Concrete;
+@model List<ContactUs>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+</style>
+<h1>All Mails</h1>
+<table id="tableMail">
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Message Date</th>
+        <th>Mail</th>
+        <th>Delete</th>
+        <th>Open Message</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Subject</td>
+            <td>@item.MessageDate</td>
+            <td>@item.Mail</td>
+            <td><a class="btn btn-danger" onclick="deleteMail(@item.ContactUsId)">Delete</a></td>
+            <td><a class="btn btn-success">Open</a></td>
+        </tr>
+    }
+</table>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+
+    function deleteMail(Id){
+        let tableMail = document.querySelector("#tableMail");
+        $.ajax({
+            url: '/admin/contactus/delete',
+            type: 'GET', // or 'POST', 'PUT', 'DELETE', etc.
+            data: { id: Id}, // Optional data to send
+            dataType: 'json', // Optional data type to expect in the response
+            success: function (response) {
+               location.reload();
+                // Handle the server response here
+                console.log(response);
+            },
+            error: function (error) {
+                // Handle errors here
+                console.error(error);
+            }
+        });
+    }
+
+</script>
