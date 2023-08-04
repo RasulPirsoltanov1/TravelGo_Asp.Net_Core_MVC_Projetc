@@ -14,6 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="ClosedXML" Version="0.102.0" />
     <PackageReference Include="EPPlus" Version="6.2.7" />
     <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.4.3" />
