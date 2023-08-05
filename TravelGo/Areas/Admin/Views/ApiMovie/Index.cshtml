@@ -1,0 +1,62 @@
+﻿@using TravelGo.Areas.Admin.Controllers;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model List<Movie>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f2f2f2;
+    }
+
+    td a {
+        color: red;
+        text-decoration: none;
+    }
+
+        td a:hover {
+            color: darkred;
+            text-decoration: underline;
+        }
+</style>
+<h1>Index</h1>
+
+<table class="dark-table">
+    <tr>
+        <th>id</th>
+        <th>thumbnail</th>
+        <th>title</th>
+        <th>year</th>
+        <th>rank</th>
+        <th>rating</th>
+        <th>Detail</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td><img style="height:50px;" src="@item.thumbnail" /></td>
+            <td>@item.title</td>
+            <td>@item.year</td>
+            <td>@item.rank</td>
+            <td>@item.rating</td>
+            <td><a asp-action="Detail" asp-route-Id="@item.id" asp-area="admin" asp-controller="ApiMovie" class="btn btn-primary">Detail</a></td>
+        </tr>
+    }
+</table>

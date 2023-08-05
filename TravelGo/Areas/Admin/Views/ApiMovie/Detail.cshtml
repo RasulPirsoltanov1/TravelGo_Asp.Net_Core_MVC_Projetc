@@ -1,0 +1,87 @@
+﻿@using TravelGo.Areas.Admin.Controllers;
+
+@{
+    ViewData["Title"] = "Detail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model Movie
+<style>
+    body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    .detail-container {
+        display: flex;
+        margin: 20px;
+    }
+
+    .thumbnail {
+        flex: 0 0 150px;
+    }
+
+        .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+
+    .details {
+        margin-left: 20px;
+    }
+
+        .details p {
+            margin: 5px 0;
+        }
+
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+
+    .image-item {
+        flex: 0 0 calc(33.33% - 10px);
+        margin: 5px;
+    }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+        }
+
+</style>
+<h1>Detail</h1>
+
+<div class="detail-container">
+    <div class="thumbnail">
+        <img src="@Model.thumbnail" alt="@Model.title" />
+    </div>
+    <div class="details">
+        <p><strong>ID:</strong> @Model.id</p>
+        <p><strong>Title:</strong> @Model.title</p>
+        <p><strong>Year:</strong> @Model.year</p>
+        <p><strong>Rank:</strong> @Model.rank</p>
+        <p><strong>Rating:</strong> @Model.rating</p>
+        <p><strong>Description:</strong> @Model.description</p>
+    </div>
+</div>
+
+<div class="image-gallery">
+    @foreach (var x in Model.image)
+    {
+        @foreach (var item in x)
+        {
+            @if (item.Length > 5)
+            {
+                <div class="image-item">
+                    <img src="@item" alt="Image" />
+                </div>
+            }
+        }
+    }
+</div>

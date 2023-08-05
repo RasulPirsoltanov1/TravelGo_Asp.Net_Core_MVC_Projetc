@@ -1,0 +1,69 @@
+﻿@using TravelGo.Areas.Admin.Controllers;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model Root
+<style>
+    body {
+        background-color: #f0f0f0;
+        color: #333;
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .base-currency {
+        background-color: #f2f2f2;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+        .base-currency p {
+            margin: 5px 0;
+        }
+
+    .exchange-rates-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .exchange-rates-table th,
+        .exchange-rates-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .exchange-rates-table th {
+            background-color: #f2f2f2;
+        }
+
+</style>
+<h1>Exchange Rates</h1>
+
+<div class="base-currency">
+    <p><strong>Base Currency:</strong> @Model.base_currency</p>
+    <p><strong>Base Currency Date:</strong> @Model.base_currency_date</p>
+</div>
+
+<table class="exchange-rates-table">
+    <tr>
+        <th>Currency</th>
+        <th>Exchange Rate Buy</th>
+    </tr>
+    @foreach (var item in Model.exchange_rates)
+    {
+        <tr>
+            <td>@item.currency</td>
+            <td>@item.exchange_rate_buy</td>
+        </tr>
+    }
+</table>
+
+
