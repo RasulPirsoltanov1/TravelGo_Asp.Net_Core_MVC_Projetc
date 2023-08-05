@@ -1,0 +1,82 @@
+﻿@using BusinessLayer.CQRS.Results.Destinations;
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model GetByIdDestinationQueryResult
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    h1 {
+        color: #007BFF;
+        margin-bottom: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    form {
+        max-width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+</style>
+
+<h1>Update Destination</h1>
+
+<form method="post" asp-action="UpdateDestination">
+    <input type="hidden" asp-for="Id" />
+    <label for="City">City:</label>
+    <input type="text" id="City" name="City" value="@Model.City" required />
+
+    <label for="DayNight">DayNight:</label>
+    <input type="text" id="DayNight" name="DayNight" value="@Model.DayNight" required />
+
+    <button type="submit">Update</button>
+</form>
+

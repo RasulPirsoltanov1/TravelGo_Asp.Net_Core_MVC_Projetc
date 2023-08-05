@@ -8,6 +8,40 @@
 <h1>Get City By Name</h1>
 @model Root23
 <style>
+    /* CSS for the search form */
+    .search-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* Styling for the search input */
+    .search-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    /* Styling for the search button */
+    .search-button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        /* Hover effect for the search button */
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+
     body {
         font-family: Arial, sans-serif;
         background-color: #f0f0f0;
@@ -39,7 +73,10 @@
 
 </style>
 <h1>Hotel List</h1>
-
+<form method="get" asp-action="GetCityByName" class="search-form">
+    <input name="city" class="search-input" placeholder="Enter city name..." />
+    <button type="submit" class="search-button">Search</button>
+</form>
 <table class="hotel-list">
     <tr>
         <th>Hotel Name</th>

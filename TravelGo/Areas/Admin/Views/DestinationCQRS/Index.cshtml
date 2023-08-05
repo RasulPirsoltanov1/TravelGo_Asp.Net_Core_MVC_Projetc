@@ -1,0 +1,55 @@
+﻿@using BusinessLayer.CQRS.Results.Destinations;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model List<GetAllDestinationQueryResult>
+
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+
+<h1>City List</h1>
+
+<table>
+    <tr>
+        <th>City</th>
+        <th>Day & Night</th>
+        <th>Price</th>
+        <th>Capacity</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.City</td>
+            <td>@item.DayNight</td>
+            <td>@item.Price</td>
+            <td>@item.Capacity</td>
+            <th>Delete</th>
+            <th><a class="btn btn-primary" asp-action="update" asp-area="admin" asp-controller="destinationcqrs" asp-route-id="@item.Id">Update</a></th>
+        </tr>
+    }
+</table>
+

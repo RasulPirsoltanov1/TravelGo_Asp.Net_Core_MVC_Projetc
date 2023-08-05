@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Serilog;
 using TravelGo.Mapping;
 using TravelGo.Models.CustomIdentityValidator;
+using BusinessLayer.Registrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -48,7 +49,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddHttpClient();
 
-
+builder.Services.AddServiceRegistration();
 
 var app = builder.Build();
 
