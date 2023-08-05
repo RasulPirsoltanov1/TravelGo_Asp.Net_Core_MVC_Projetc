@@ -25,7 +25,7 @@ namespace TravelGo.Areas.Admin.Controllers
             {
                 response.EnsureSuccessStatusCode();
                 var body = await response.Content.ReadAsStringAsync();
-                return View(JsonConvert.DeserializeObject<Root>(body));
+                return View(JsonConvert.DeserializeObject<Root2>(body));
             }
         }
     }
@@ -38,7 +38,7 @@ namespace TravelGo.Areas.Admin.Controllers
         public string exchange_rate_buy { get; set; }
     }
 
-    public class Root
+    public class Root2
     {
         public List<ExchangeRate> exchange_rates { get; set; }
         public string base_currency_date { get; set; }

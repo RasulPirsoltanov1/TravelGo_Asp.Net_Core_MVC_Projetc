@@ -1,0 +1,69 @@
+﻿@using TravelGo.Areas.Admin.Controllers;
+
+@{
+    ViewData["Title"] = "GetCityByName";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Get City By Name</h1>
+@model Root23
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .hotel-list {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .hotel-list th,
+        .hotel-list td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .hotel-list th {
+            background-color: #f2f2f2;
+        }
+
+</style>
+<h1>Hotel List</h1>
+
+<table class="hotel-list">
+    <tr>
+        <th>Hotel Name</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Review Score</th>
+        <th>Price</th>
+        <th>Currency</th>
+        <th>Distance to City Center</th>
+        <th>Main Photo</th>
+        <th>Max Photo</th>
+    </tr>
+    @foreach (var hotel in Model.result)
+    {
+        <tr>
+            <td>@hotel.hotel_name</td>
+            <td>@hotel.city_name_en</td>
+            <td>@hotel.country_trans</td>
+            <td>@hotel.review_score</td>
+            <td>@hotel.composite_price_breakdown.gross_amount.value</td>
+            <td>@hotel.composite_price_breakdown.gross_amount.currency</td>
+            <td>@hotel.distance_to_cc_formatted</td>
+            <td><img src="@hotel.main_photo_url" alt="Main Photo" style="max-width: 100px;"></td>
+            <td><img src="@hotel.max_photo_url" alt="Max Photo" style="max-width: 100px;"></td>
+        </tr>
+    }
+</table>

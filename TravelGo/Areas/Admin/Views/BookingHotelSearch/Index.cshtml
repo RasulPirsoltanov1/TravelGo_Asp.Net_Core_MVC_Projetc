@@ -1,0 +1,107 @@
+﻿@using TravelGo.Areas.Admin.Controllers;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model Root23
+<style>
+    /* CSS for the search form */
+    .search-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /* Styling for the search input */
+    .search-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    /* Styling for the search button */
+    .search-button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        /* Hover effect for the search button */
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .hotel-list {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .hotel-list th,
+        .hotel-list td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .hotel-list th {
+            background-color: #f2f2f2;
+        }
+
+</style>
+<h1>Hotel List</h1>
+
+<form method="get" asp-action="GetCityByName" class="search-form">
+    <input name="city" class="search-input" placeholder="Enter city name..." />
+    <button type="submit" class="search-button">Search</button>
+</form>
+
+
+<table class="hotel-list">
+    <tr>
+        <th>Hotel Name</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Review Score</th>
+        <th>Price</th>
+        <th>Currency</th>
+        <th>Distance to City Center</th>
+        <th>Main Photo</th>
+        <th>Max Photo</th>
+    </tr>
+    @foreach (var hotel in Model.result)
+    {
+        <tr>
+            <td>@hotel.hotel_name</td>
+            <td>@hotel.city_name_en</td>
+            <td>@hotel.country_trans</td>
+            <td>@hotel.review_score</td>
+            <td>@hotel.composite_price_breakdown.gross_amount.value</td>
+            <td>@hotel.composite_price_breakdown.gross_amount.currency</td>
+            <td>@hotel.distance_to_cc_formatted</td>
+            <td><img src="@hotel.main_photo_url" alt="Main Photo" style="max-width: 100px;"></td>
+            <td><img src="@hotel.max_photo_url" alt="Max Photo" style="max-width: 100px;"></td>
+        </tr>
+    }
+</table>
