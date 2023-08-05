@@ -1,5 +1,5 @@
 ﻿@using DTOLayer.DTOs.AnnouncementDTOs;
-@model List<AnnouncementAddDTO>
+@model List<AnnouncementListDTO>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -52,6 +52,7 @@
         <th>Title</th>
         <th>Content</th>
         <th>Details</th>
+        <th>Delete</th>
     </tr>
 
     @foreach (var item in Model)
@@ -60,7 +61,15 @@
             <td>#</td>
             <td>@item.Title</td>
             <td>@item.Contante</td>
-            <td><a href="#" class="btn btn-primary">Details</a></td>
+            <td><a asp-action="Update" asp-area="admin" asp-controller="Announcement" asp-route-id="@item.AnnouncementId" class="btn btn-primary">Update</a></td>
+            <td><a  class="btn btn-danger" asp-action="Delete" asp-area="admin" asp-controller="Announcement" asp-route-id="@item.AnnouncementId">Delete</a></td>
         </tr>
     }
 </table>
+
+
+<div class="buy-now">
+    <a asp-action="Add" asp-controller="Announcement" asp-area="admin"
+       target="_blank"
+       class="btn btn-success btn-buy-now">Add new Announcement</a>
+</div>

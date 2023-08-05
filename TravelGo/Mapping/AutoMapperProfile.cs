@@ -10,6 +10,7 @@ namespace TravelGo.Mapping
         public AutoMapperProfile()
         {
             CreateMap<Announcement, AnnouncementAddDTO>().ReverseMap();
+            CreateMap<Announcement, AnnouncementListDTO>().ReverseMap();
             CreateMap<AppUserRegisterDTO, AppUser>().ReverseMap();
             CreateMap<AppUserLoginDTO, AppUser>().ReverseMap();
         }

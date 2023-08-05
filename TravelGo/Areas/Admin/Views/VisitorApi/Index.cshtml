@@ -1,0 +1,73 @@
+﻿@using TravelGo.Areas.Admin.Controllers;
+@model List<Visitor>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Visitors api</h1>
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f2f2f2;
+    }
+
+    td a {
+        color: red;
+        text-decoration: none;
+    }
+
+        td a:hover {
+            color: darkred;
+            text-decoration: underline;
+        }
+</style>
+
+<h1>Visitors List</h1>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Mail</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Delete</th>
+        <th>Update</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td></td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.Mail</td>
+            <td>@item.City</td>
+            <td>@item.Country</td>
+            <td><a class="btn btn-danger" asp-action="Delete" asp-controller="Visitorapi" asp-area="Admin" asp-route-Id="@item.VisitorId" style="color:white">Delete</a></td>
+            <td><a class="btn btn-success" asp-action="Update" asp-controller="Visitorapi" asp-area="Admin" asp-route-Id="@item.VisitorId" style="color:white">Update</a></td>
+        </tr>
+    }
+</table>
+
+<div class="buy-now">
+    <a asp-action="Add" asp-area="admin" asp-controller="VisitorApi"
+       target="_blank"
+       class="btn btn-primary btn-buy-now">Add new Visitor</a>
+</div>
