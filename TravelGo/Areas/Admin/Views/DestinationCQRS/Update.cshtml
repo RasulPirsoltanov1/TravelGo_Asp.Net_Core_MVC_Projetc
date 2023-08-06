@@ -45,7 +45,7 @@
         margin-bottom: 5px;
     }
 
-    input[type="text"] {
+    input {
         width: 100%;
         padding: 8px;
         border: 1px solid #ccc;
@@ -69,14 +69,17 @@
 
 <h1>Update Destination</h1>
 
-<form method="post" asp-action="UpdateDestination">
+<form method="post">
     <input type="hidden" asp-for="Id" />
     <label for="City">City:</label>
-    <input type="text" id="City" name="City" value="@Model.City" required />
+    <input type="text" id="City" name="City" asp-for="@Model.City" required />
 
     <label for="DayNight">DayNight:</label>
-    <input type="text" id="DayNight" name="DayNight" value="@Model.DayNight" required />
+    <input type="text" id="DayNight" name="DayNight" asp-for="@Model.DayNight" required />
 
+    <label for="DayNight">Price:</label>
+    <input  id="Price" name="Price" asp-for="@Model.Price" required />
+    <hr />
     <button type="submit">Update</button>
 </form>
 

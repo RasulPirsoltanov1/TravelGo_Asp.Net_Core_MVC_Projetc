@@ -14,6 +14,9 @@ namespace BusinessLayer.Registrations
         {
             services.AddScoped<GetAllDestinationQueryHandler>();
             services.AddScoped<GetByIdDestinationQueryHandler>();
+            services.AddScoped<CreateDestinationCommandHandler>();
+            services.AddScoped<DeleteDestinationCommandHandler>();
+            services.AddScoped<UpdateDestinationCommandHandler>();
         }
     }
 }

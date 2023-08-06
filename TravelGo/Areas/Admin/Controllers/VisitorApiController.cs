@@ -40,7 +40,7 @@ namespace TravelGo.Areas.Admin.Controllers
                 // You can use a logging framework like Serilog or ILogger
                 // Also, consider returning an error view or redirecting to an error page.
                 // For simplicity, we are just returning an error view here.
-                return View(ex.Message);
+                return BadRequest(ex.Message);
             }
         }
         [HttpGet]

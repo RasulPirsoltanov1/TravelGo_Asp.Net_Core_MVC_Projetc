@@ -1,0 +1,30 @@
+﻿@using BusinessLayer.CQRS.Commands.DestinationCommands;
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model CreateDestinationCommand
+<div class="container">
+    <h1>Add New Destination</h1>
+    <form method="post" class="form-control">
+        <div class="form-group">
+            <label for="City">City:</label>
+            <input type="text" asp-for="City" id="City" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="DayNight">Day/Night:</label>
+            <input type="text" asp-for="DayNight" id="DayNight" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="Price">Price:</label>
+            <input type="number" asp-for="Price" id="Price" step="0.01" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="Capacity">Capacity:</label>
+            <input type="number" asp-for="Capacity" id="Capacity" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Add Destination</button>
+    </form>
+</div>
+

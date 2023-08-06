@@ -30,7 +30,7 @@
 
 <h1>City List</h1>
 
-<table>
+<table id="">
     <tr>
         <th>City</th>
         <th>Day & Night</th>
@@ -47,9 +47,16 @@
             <td>@item.DayNight</td>
             <td>@item.Price</td>
             <td>@item.Capacity</td>
-            <th>Delete</th>
+            <th><a class="btn btn-danger" asp-action="Delete" asp-area="admin" asp-controller="destinationcqrs" asp-route-id="@item.Id">Delete</a></th>
             <th><a class="btn btn-primary" asp-action="update" asp-area="admin" asp-controller="destinationcqrs" asp-route-id="@item.Id">Update</a></th>
         </tr>
     }
 </table>
 
+
+
+<div class="buy-now">
+    <a asp-action="Add" asp-area="admin" asp-controller="DestinationCQRS"
+       target="_blank"
+       class="btn btn-success btn-buy-now">Add new Destination</a>
+</div>

@@ -18,6 +18,7 @@ namespace BusinessLayer.CQRS.Handlers.DestinationHandlers
             var result = await _context.Destinations.Select(d => new GetByIdDestinationQueryResult
             {
                 City = d.City,
+                Price=d.Price,
                 DayNight = d.DayNight,
                 Id = d.DestinationId,
             }).FirstOrDefaultAsync(d => d.Id== getByIdDestinationQuery.Id);
