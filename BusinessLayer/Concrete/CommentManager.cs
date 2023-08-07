@@ -20,5 +20,10 @@ namespace BusinessLayer.Concrete
         {
             return _commentDal.GetCommenWithDestinations();
         }
+
+        public List<Comment> GetCommentsWithDestinationAndAppUser(Expression<Func<Comment, bool>> expression)
+        {
+            return _commentDal.GetCommenWithDestinationsAndUser(expression);
+        }
     }
 }

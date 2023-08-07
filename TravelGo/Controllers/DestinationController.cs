@@ -1,10 +1,13 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace TravelGo.Controllers
 {
+    [AllowAnonymous]
+
     public class DestinationController : Controller
     {
         IDestinationService _destinationManager;

@@ -1,12 +1,14 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.Abstract.Utilities;
 using ClosedXML.Excel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using OfficeOpenXml;
 using TravelGo.Models;
 
 namespace TravelGo.Controllers
 {
+    //[AllowAnonymous]
     public class ExcelController : Controller
     {
         IDestinationService destinationService;
