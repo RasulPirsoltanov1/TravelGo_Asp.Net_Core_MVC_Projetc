@@ -1,0 +1,62 @@
+﻿@using DTOLayer.DTOs.Account;
+@model AccountDTO
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Transfer Amount</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="SenderId">Sender ID:</label>
+            <input type="number" class="form-control" id="SenderId" asp-for="SenderId" required>
+        </div>
+        <div class="form-group">
+            <label for="ReceiverId">Receiver ID:</label>
+            <input type="number" class="form-control" id="ReceiverId" asp-for="ReceiverId" required>
+        </div>
+        <div class="form-group">
+            <label for="Amount">Amount:</label>
+            <input type="number" step="0.01" class="form-control" id="Amount" asp-for="Amount" required>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Transfer</button>
+    </form>
+</div>
+
+
+
+<!-- JavaScript -->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+<!-- Bootstrap theme -->
+<!--
+    RTL version
+-->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.rtl.min.css" />
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.rtl.min.css" />
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.rtl.min.css" />
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.rtl.min.css" />
+@if (ViewBag.Success)
+{
+    <script>
+        alertify.alert('OK', 'Tarnsaction succesfully finished', function () { alertify.success('Ok'); }).moveTo(100, 0);
+    </script>
+}
+
+@if (!ViewBag.Success)
+{
+    <script>
+        alertify.alert('Error', 'Something went wrong', function () { alertify.error('error'); }).moveTo(100, 0);
+    </script>
+}
