@@ -1,0 +1,49 @@
+﻿@using BusinessLayer.CQRS.Results.GuideResults;
+@model List<GetAllGuideResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+ <style>
+        /* Add responsive styles here */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+    </style>
+
+<h2>Guide List</h2>
+
+<table>
+    <tr>
+        <th>Guide ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Update</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.GuideId</th>
+            <th>@item.Name</th>
+            <th>@item.Description</th>
+            <td><img src="@item.Image" alt="Guide Image" width="100"></td>
+            <th><a asp-action="Update" asp-area="admin" asp-controller="GuideMediatR" asp-route-id="@item.GuideId" class="btn btn-success">Update</a></th>
+
+        </tr>
+    }
+</table>
+
+

@@ -12,6 +12,10 @@ using Serilog;
 using TravelGo.Mapping;
 using TravelGo.Models.CustomIdentityValidator;
 using BusinessLayer.Registrations;
+using BusinessLayer.CQRS.Results.GuideResults;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
+using BusinessLayer.CQRS.Queries.Destinations;
+using BusinessLayer.CQRS.Queries.GuideQueries;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,6 +54,9 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddHttpClient();
 
 builder.Services.AddServiceRegistration();
+
+
+
 
 var app = builder.Build();
 

@@ -1,4 +1,6 @@
 ﻿using BusinessLayer.CQRS.Handlers.DestinationHandlers;
+using BusinessLayer.CQRS.Handlers.GuideHandlers;
+using BusinessLayer.CQRS.Results.GuideResults;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -17,6 +19,7 @@ namespace BusinessLayer.Registrations
             services.AddScoped<CreateDestinationCommandHandler>();
             services.AddScoped<DeleteDestinationCommandHandler>();
             services.AddScoped<UpdateDestinationCommandHandler>();
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ServiceRegistration).Assembly));
         }
     }
 }

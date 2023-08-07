@@ -1,0 +1,26 @@
+﻿@using BusinessLayer.CQRS.Results.GuideResults;
+@model GetByIdGuideResult
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <h2>Edit Guide</h2>
+    <form method="post" >
+        <input type="hidden" asp-for="GuideId"  />
+        <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" asp-for="Name" id="Name" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="Description">Description:</label>
+            <textarea asp-for="Description" id="Description" rows="4" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="Image">Image URL:</label>
+            <input type="url" asp-for="Image" id="Image" class="form-control" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+    </form>
+</div>

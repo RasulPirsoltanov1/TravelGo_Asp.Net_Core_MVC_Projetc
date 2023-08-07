@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BusinessLayer.CQRS.Results.GuideResults;
+using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

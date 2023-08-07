@@ -37,6 +37,29 @@
           "TravelGo.dll": {}
         }
       },
+      "AdaskoTheBeAsT.MediatR.SimpleInjector/8.2.0": {
+        "dependencies": {
+          "MediatR": "12.1.1",
+          "SimpleInjector": "5.4.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AdaskoTheBeAsT.MediatR.SimpleInjector.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AdaskoTheBeAsT.MediatR.SimpleInjector.AspNetCore/8.2.0": {
+        "dependencies": {
+          "AdaskoTheBeAsT.MediatR.SimpleInjector": "8.2.0"
+        },
+        "runtime": {
+          "lib/net6.0/AdaskoTheBeAsT.MediatR.SimpleInjector.AspNetCore.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "AutoMapper/12.0.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0"
@@ -790,6 +813,38 @@
           "lib/net6.0/MailKit.dll": {
             "assemblyVersion": "4.1.0.0",
             "fileVersion": "4.1.0.0"
+          }
+        }
+      },
+      "MediatR/12.1.1": {
+        "dependencies": {
+          "MediatR.Contracts": "2.0.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.1.1.0"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+        "dependencies": {
+          "MediatR": "12.1.1",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.0.0"
           }
         }
       },
@@ -2291,6 +2346,17 @@
           }
         }
       },
+      "SimpleInjector/5.4.1": {
+        "dependencies": {
+          "System.ComponentModel": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/SimpleInjector.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
       "SixLabors.Fonts/1.0.0-beta19": {
         "runtime": {
           "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
@@ -2379,6 +2445,11 @@
           "System.Runtime": "4.3.1",
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0"
+        }
+      },
+      "System.ComponentModel/4.0.1": {
+        "dependencies": {
+          "System.Runtime": "4.3.1"
         }
       },
       "System.Composition/1.0.31": {
@@ -3277,12 +3348,15 @@
       },
       "BusinessLayer/1.0.0": {
         "dependencies": {
+          "AdaskoTheBeAsT.MediatR.SimpleInjector.AspNetCore": "8.2.0",
           "ClosedXML": "0.102.0",
           "DTOLayer": "1.0.0",
           "DataAccessLayer": "1.0.0",
           "EntityLayer": "1.0.0",
           "FluentValidation": "11.6.0",
           "FluentValidation.AspNetCore": "11.3.0",
+          "MediatR": "12.1.1",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.20",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.20"
         },
@@ -3323,6 +3397,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AdaskoTheBeAsT.MediatR.SimpleInjector/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VyRt3bvmWYkHoBYkcoO0/pwKiSGMW6mhh2oswBuxf5kegx+CYhu1TzmAbG8Xo94JUEs9kZ8PAiajxs028QKH1g==",
+      "path": "adaskothebeast.mediatr.simpleinjector/8.2.0",
+      "hashPath": "adaskothebeast.mediatr.simpleinjector.8.2.0.nupkg.sha512"
+    },
+    "AdaskoTheBeAsT.MediatR.SimpleInjector.AspNetCore/8.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xGPG0pmPapfzevDN17iD+4wziaVt5zEUmoDyfGeD9EWe4gqUcF4n+GC5vwAS5B1M3zRektPyPWqplWFXsKvXhA==",
+      "path": "adaskothebeast.mediatr.simpleinjector.aspnetcore/8.2.0",
+      "hashPath": "adaskothebeast.mediatr.simpleinjector.aspnetcore.8.2.0.nupkg.sha512"
     },
     "AutoMapper/12.0.1": {
       "type": "package",
@@ -3792,6 +3880,27 @@
       "sha512": "sha512-m/G6LiMdu0it09rcZWaK9YtRqoc2/Xhv3+7kbCApEz1sZlK2IihWvfsf1IEWTswy5GmvWrtmh6QSdTyg5MIXgg==",
       "path": "mailkit/4.1.0",
       "hashPath": "mailkit.4.1.0.nupkg.sha512"
+    },
+    "MediatR/12.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1AbwzzeS6gn4NdcO6A9LfKS5TXXgAiUQM3J18dREHa7O7TrdCXJ5dNFeRBpzPZY7UWl5Kby+n9pWrPJe3SDiMA==",
+      "path": "mediatr/12.1.1",
+      "hashPath": "mediatr.12.1.1.nupkg.sha512"
+    },
+    "MediatR.Contracts/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "path": "mediatr.contracts/2.0.1",
+      "hashPath": "mediatr.contracts.2.0.1.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/11.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jfD2NBYvP+HiUil2DWfM4bn+bCLp4H2xvoc9aorcnn2Jpgz7Ey8RyYMpgqeF3bs6CP6t8pzb6WkF5NFF/1RLHA==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/11.0.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512"
     },
     "MessagePack/2.1.152": {
       "type": "package",
@@ -4605,6 +4714,13 @@
       "path": "serilog.sinks.periodicbatching/3.1.0",
       "hashPath": "serilog.sinks.periodicbatching.3.1.0.nupkg.sha512"
     },
+    "SimpleInjector/5.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L7s/snITatVAFz3dKM0+YVO0XApEj+ugCstDhq9eQLi1UYnKFyoNW6RtHkYfv5ue/UVrbS3l6ivTKIUO3FcRRg==",
+      "path": "simpleinjector/5.4.1",
+      "hashPath": "simpleinjector.5.4.1.nupkg.sha512"
+    },
     "SixLabors.Fonts/1.0.0-beta19": {
       "type": "package",
       "serviceable": true,
@@ -4674,6 +4790,13 @@
       "sha512": "sha512-prtjIEMhGUnQq6RnPEYLpFt8AtLbp9yq2zxOSrY7KJJZrw25Fi97IzBqY7iqssbM61Ek5b8f3MG/sG1N2sN5KA==",
       "path": "system.collections.nongeneric/4.3.0",
       "hashPath": "system.collections.nongeneric.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w==",
+      "path": "system.componentmodel/4.0.1",
+      "hashPath": "system.componentmodel.4.0.1.nupkg.sha512"
     },
     "System.Composition/1.0.31": {
       "type": "package",
