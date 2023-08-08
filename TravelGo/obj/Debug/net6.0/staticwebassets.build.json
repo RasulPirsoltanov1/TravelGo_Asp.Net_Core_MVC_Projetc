@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VS2K7GnGx7kF8u/AGzkRRIKlQq2jdiSsJzzTrf7eyv4=",
+  "Hash": "tn/PNjU6XUo8h/dYo4wgULgSpqaLgc/7agZtTBlR8VU=",
   "Source": "TravelGo",
   "BasePath": "_content/TravelGo",
   "Mode": "Default",
@@ -14278,6 +14278,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\user_images\\3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\wwwroot\\user_images\\68def14c-d882-438b-9364-7277d2ea40a3.jpg",
+      "SourceId": "TravelGo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\wwwroot\\",
+      "BasePath": "_content/TravelGo",
+      "RelativePath": "user_images/68def14c-d882-438b-9364-7277d2ea40a3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\user_images\\68def14c-d882-438b-9364-7277d2ea40a3.jpg"
     },
     {
       "Identity": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\TravelGo\\wwwroot\\user_images\\7638fa94-5628-49db-9064-4f06b73877b2.jpg",

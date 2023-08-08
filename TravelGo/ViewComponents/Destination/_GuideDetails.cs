@@ -6,16 +6,17 @@ namespace TravelGo.ViewComponents.Destination
     public class _GuideDetails:ViewComponent
     {
         IGuideService _guideService;
+        IDestinationService _destinationService;
 
-        public _GuideDetails(IGuideService guideService)
+        public _GuideDetails(IGuideService guideService, IDestinationService destinationService)
         {
             _guideService = guideService;
+            _destinationService = destinationService;
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(int id)
         {
-            var count = _guideService.TGetList().Count();
-            var guide = _guideService.TGetById(2);
+            var guide =_destinationService.GetDestinationWithGuide(d=>d.DestinationId==id);
             return View(guide);
         }
     }

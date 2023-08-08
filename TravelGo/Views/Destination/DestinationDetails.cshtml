@@ -108,7 +108,7 @@
                 </div>
 
                 <!--//author-card-->
-                @await Component.InvokeAsync("_GuideDetails");
+                @await Component.InvokeAsync("_GuideDetails",new {id=Model.DestinationId});
                 <!--//author-card-->
                 @await Component.InvokeAsync("_DestinationComments",new {id=Model.DestinationId})
                 @await Html.PartialAsync("/Views/Comment/AddComment.cshtml")

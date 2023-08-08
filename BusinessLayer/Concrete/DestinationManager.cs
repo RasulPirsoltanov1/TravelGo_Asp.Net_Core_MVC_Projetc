@@ -15,8 +15,15 @@ namespace BusinessLayer.Concrete
 {
     public class DestinationManager : GenericService<Destination, IDestinationDal>, IDestinationService
     {
+        IDestinationDal _tdal;
         public DestinationManager(IDestinationDal tdal) : base(tdal)
         {
+            _tdal = tdal;
+        }
+
+        public Destination GetDestinationWithGuide(Expression<Func<Destination, bool>> expression)
+        {
+            return _tdal.GetDestinationWithGuide(expression);
         }
     }
 }

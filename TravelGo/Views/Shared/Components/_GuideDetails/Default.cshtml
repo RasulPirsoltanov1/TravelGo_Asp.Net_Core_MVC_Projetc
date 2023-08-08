@@ -1,17 +1,17 @@
 ﻿@using EntityLayer.Concrete;
-@model Guide
+@model Destination
 
 <div class="author-card mt-5">
     <div class="row align-items-center">
         <div class="col-sm-3 col-6">
             <div>
-                <img src="@Model.Image" alt="" class="rounded-circle img-fluid">
+                <img src="@Model.Guide.Image" alt="" class="rounded-circle img-fluid">
             </div>
         </div>
         <div class="col-sm-9 mt-sm-0 mt-3">
-            <h3 class="mb-3 title">@Model.Name</h3>
+            <h3 class="mb-3 title">@Model.Guide.Name</h3>
             <p>
-                @Model.Description
+                @Model.Guide.Description
             </p>
             <ul class="author-icons mt-4">
                 <li>

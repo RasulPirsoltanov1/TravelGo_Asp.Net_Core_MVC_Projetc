@@ -28,13 +28,17 @@ namespace TravelGo.Controllers
         [HttpPost]
         public async Task<IActionResult> AddComment(EntityLayer.Concrete.Comment comment)
         {
-            AppUser appUser = await _userManager.FindByNameAsync(User?.Identity?.Name);
-            if (appUser != null)
+            if (User?.Identity?.Name != null)
             {
-                comment.AppUserId = appUser.Id;
+                AppUser appUser = await _userManager.FindByNameAsync(User?.Identity?.Name);
+                if (appUser != null)
+                {
+                    comment.AppUserId = appUser.Id;
+                }
             }
             comment.CommentDate = DateTime.UtcNow;
             comment.CommentState = true;
+            comment.CommentUser = "";
             _commentManager.TAdd(comment);
             return RedirectToAction("DestinationDetails", "Destination", new { id = comment.DestinationId });
         }
