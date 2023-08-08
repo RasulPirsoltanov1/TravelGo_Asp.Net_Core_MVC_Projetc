@@ -24,7 +24,7 @@ namespace TravelGo.Controllers
         [HttpGet]
         public IActionResult DestinationDetails(int id)
         {
-            var value = _destinationManager.TGetById(id);
+            var value = _destinationManager.GetDestinationWithGuide(d=>d.DestinationId==id);
             ViewBag.Id = id;
             return View(value);
         }
