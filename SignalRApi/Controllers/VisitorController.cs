@@ -30,7 +30,7 @@ namespace SignalRApi.Controllers
                         VisitDate = DateTime.Now.AddDays(x),
                     };
                     _visitorService.SaveVisitors(newVisitor).Wait();
-                    Thread.Sleep(1000);
+                    Thread.Sleep(10);
                 }
             });
             return Ok("visitors added successfully");

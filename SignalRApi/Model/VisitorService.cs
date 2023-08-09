@@ -32,7 +32,7 @@ namespace SignalRApi.Model
             List<VisitorChart> visitorCharts = new List<VisitorChart>();
             using (var command = _appDbContext.Database.GetDbConnection().CreateCommand())
             {
-                command.CommandText = "query";
+                command.CommandText = "select * from Visitors";
                 command.CommandType = CommandType.Text;
                 _appDbContext.Database.OpenConnection();
                 using (var reader = command.ExecuteReader())
