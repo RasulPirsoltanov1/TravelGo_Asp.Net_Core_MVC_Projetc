@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SignalRApi.DAL;
+using SignalRApi.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,11 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
+
+
+builder.Services.AddScoped<VisitorService>();
+builder.Services.AddSignalR();
+
 
 
 
