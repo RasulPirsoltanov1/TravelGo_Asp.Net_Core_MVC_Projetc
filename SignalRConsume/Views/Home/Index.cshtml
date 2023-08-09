@@ -9,23 +9,76 @@
     <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
     <script type="text/javascript">
         $(document).ready(() => {
-            debugger;
-            var connection = new signalR.HubConnectionBuilder().withUrl("http://localhost:5174/VisitorHub").build();
+            var connection = new signalR.HubConnectionBuilder()
+                .withUrl("http://localhost:5174/VisitorHub")
+                .build();
+
             let connectionStatusElement = document.querySelector("#connectionStatus");
 
-            //connection.onclose(() => {
-            //    connectionStatusElement.innerText = "Disconnected";
-            //});
-
-            connection.start().then(() => {
-                connectionStatusElement.innerText = connection.state;
-            }).catch((err) => {
-                console.log(err);
+            connection.on("ReceiveList", list => {
+                console.log(list);
             });
+
+            connection.start()
+                .then(() => {
+                    connection.invoke("SendVisitorList").then(x => {
+                        console.log(x);
+                    }).catch(error => {
+                        console.error("Error invoking SendVisitorList:", error);
+                    });
+                    connectionStatusElement.innerText = connection.state;
+                })
+                .catch((err) => {
+                    console.log(err);
+                });
+
         });
 
+        window.onload = function () {
+
+            var dps = []; // dataPoints
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "Dynamic Data"
+                },
+                data: [{
+                    type: "line",
+                    dataPoints: dps
+                }]
+            });
+
+            var xVal = 0;
+            var yVal = 100;
+            var updateInterval = 1000;
+            var dataLength = 20; // number of dataPoints visible at any point
+
+            var updateChart = function (count) {
+
+                count = count || 1;
+
+                for (var j = 0; j < count; j++) {
+                    yVal = yVal + Math.round(5 + Math.random() * (-5 - 5));
+                    dps.push({
+                        x: xVal,
+                        y: yVal
+                    });
+                    xVal++;
+                }
+
+                if (dps.length > dataLength) {
+                    dps.shift();
+                }
+
+                chart.render();
+            };
+
+            updateChart(dataLength);
+            setInterval(function () { updateChart() }, updateInterval);
+
+        }
 
     </script>
+
 }
 
 <div class="container">
@@ -34,3 +87,6 @@
         Connection State : <span id="connectionStatus"></span>
     </div>
 </div>
+
+    <div id="chartContainer" style="height: 370px; width:100%;"></div>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>

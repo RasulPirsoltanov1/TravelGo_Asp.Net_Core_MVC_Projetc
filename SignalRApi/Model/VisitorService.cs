@@ -25,14 +25,14 @@ namespace SignalRApi.Model
         {
             await _appDbContext.Visitors.AddAsync(visitor);
             await _appDbContext.SaveChangesAsync();
-            await _hubContext.Clients.All.SendAsync("CallVisitorList", "asa");
+            await _hubContext.Clients.All.SendAsync("ReceiveList", GetVisitorCharts());
         }
         public List<VisitorChart> GetVisitorCharts()
         {
             List<VisitorChart> visitorCharts = new List<VisitorChart>();
             using (var command = _appDbContext.Database.GetDbConnection().CreateCommand())
             {
-                command.CommandText = "select * from Visitors";
+                command.CommandText = "select [date],[1],[2],[3],[4],[5] from(select [City],[CityVisitCount],CAST([VisitDate] as Date) as [date] from Visitors) as vistTable pivot (Sum(CityVisitCount) for City in([1],[2],[3],[4],[5])) as pivotTable order by [date] asc";
                 command.CommandType = CommandType.Text;
                 _appDbContext.Database.OpenConnection();
                 using (var reader = command.ExecuteReader())
