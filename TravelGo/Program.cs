@@ -16,6 +16,8 @@ using BusinessLayer.CQRS.Results.GuideResults;
 using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using BusinessLayer.CQRS.Queries.Destinations;
 using BusinessLayer.CQRS.Queries.GuideQueries;
+using FluentValidation;
+using BusinessLayer.ValidationRules.ContactUs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -55,7 +57,7 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddServiceRegistration();
 
-
+builder.Services.AddValidatorsFromAssemblyContaining<ContactUsCreateCommandValidator>();
 
 
 var app = builder.Build();
