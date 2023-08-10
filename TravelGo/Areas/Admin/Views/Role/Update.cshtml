@@ -1,0 +1,14 @@
+﻿@using DTOLayer.DTOs.RoleDTOs;
+@model UpdateRoleDTO
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Update Role</h1>
+
+<form class="form-group" method="post">
+    <input asp-for="Name" class="form-control" />
+    <br />
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

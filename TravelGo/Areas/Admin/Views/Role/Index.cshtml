@@ -26,8 +26,8 @@
                 <tr>
                     <td>@count</td>
                     <td>@item.Name</td>
-                    <td><a href="#" class="btn btn-danger">Delete</a></td>
-                    <td><a href="#" class="btn btn-primary">Edit</a></td>
+                    <td><a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a></td>
+                    <td><a asp-action="Update" asp-route-id="@item.Id" class="btn btn-primary">Edit</a></td>
                 </tr>
             }
         }
@@ -38,7 +38,9 @@
 
     </tbody>
 </table>
-
+<a asp-action="UserAssignRoleList" asp-controller="Role" asp-area="admin"
+   target="_blank"
+   class="btn btn-primary btn-buy-now">User Roles</a>
 
 
 <div class="buy-now">
@@ -46,3 +48,4 @@
        target="_blank"
        class="btn btn-success btn-buy-now">Add new Role</a>
 </div>
+

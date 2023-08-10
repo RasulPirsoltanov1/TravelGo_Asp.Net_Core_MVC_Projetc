@@ -10,3 +10,6 @@ C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DT
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DTOLayer\obj\Debug\net6.0\refint\DTOLayer.dll
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DTOLayer\obj\Debug\net6.0\DTOLayer.pdb
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DTOLayer\obj\Debug\net6.0\ref\DTOLayer.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DTOLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DTOLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\DTOLayer\obj\Debug\net6.0\DTOLayer.csproj.CopyComplete

@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg stroke">
             <h1>
-                <a class="navbar-brand mr-lg-5" asp-controller="Default" asp-action="Index" >
+                <a class="navbar-brand mr-lg-5" asp-controller="Default" asp-action="Index">
                     TravelGo
                 </a>
             </h1>
@@ -17,22 +17,29 @@
                 <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </span>
             </button>
-
+            @{
+                string currentPath = Context.Request.Path;
+                string homePath = Url.Action("Index", "default");
+                string destinationPath = Url.Action("Index", "Destination");
+                string guidePath = Url.Action("Index", "Guide");
+                string contactPath = Url.Action("Index", "Contact");
+                // Add other link paths as needed
+            }
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item @((currentPath==homePath)? "active":"")">
+                        <a class="nav-link" asp-controller="Default" asp-action="Index">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Destination" asp-action="Index" >Destinations</a>
+                    <li class="nav-item @((currentPath==destinationPath)? "active":"") ">
+                        <a class="nav-link" asp-controller="Destination" asp-action="Index">Destinations </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item @((currentPath==guidePath)? "active":"")">
                         <a class="nav-link" asp-controller="Guide" asp-action="Index">Guides </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item @((currentPath==contactPath)? "active":"")">
                         <a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a>
                     </li>
 

@@ -1,0 +1,21 @@
+﻿@using DTOLayer.DTOs.RoleDTOs;
+@model List<RoleAssignDTO>
+@{
+    ViewData["Title"] = "RoleAssign";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<form method="post">
+    @for(var i =0; i< Model.Count;i++)
+    {
+        <div class="form-check">
+            <input hidden asp-for="@Model[i].RoleName">
+            <input hidden asp-for="@Model[i].RoleId">
+            <input type="checkbox" asp-for="@Model[i].RoleExists" class="form-check-input">
+            <label class="form-check-label">@Model[i].RoleName</label>
+        </div>
+    }
+    <br />
+    <button class="btn btn-primary"> Add</button>
+</form>

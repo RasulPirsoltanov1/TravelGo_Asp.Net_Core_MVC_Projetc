@@ -235,7 +235,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\EntityLayer\\EntityLayer.csproj": {
+                "projectPath": "C:\\Users\\resul\\OneDrive\\Masaüstü\\Projects\\TravelGo_Asp.Net_Core_MVC_Projetc\\EntityLayer\\EntityLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
