@@ -19,6 +19,7 @@ namespace TravelGo.ViewComponents.MemmberDashboard
             ViewBag.NameSurname = $"{user.Name} {user.Surname}";
             ViewBag.phone = user.PhoneNumber;
             ViewBag.email = user.Email;
+            ViewBag.image = user.ImageUrl;
             return View();
         }
     }

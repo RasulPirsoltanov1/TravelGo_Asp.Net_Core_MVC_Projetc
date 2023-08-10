@@ -12,6 +12,7 @@ namespace DataAccessLayer.Concrete.Abstract
 {
     public interface IDestinationDal : IGenericDal<Destination>
     {
-        Destination GetDestinationWithGuide(Expression<Func<Destination,bool>> expression);
+        Destination GetDestinationWithGuide(Expression<Func<Destination, bool>> expression);
+        public List<Destination> GetLastDestinations(int take);
     }
 }

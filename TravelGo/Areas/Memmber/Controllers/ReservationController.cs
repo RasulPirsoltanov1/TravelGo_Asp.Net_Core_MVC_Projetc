@@ -58,13 +58,17 @@ namespace TravelGo.Areas.Memmber.Controllers
         }
 
         [HttpPost]
-        public IActionResult NewReservation(Reservation reservation)
+        public async Task<IActionResult> NewReservation(Reservation reservation)
         {
-            reservation.AppUserId = 7;
+            var user = await _userManager.FindByNameAsync(User?.Identity?.Name);
+            reservation.AppUserId = user.Id;
             reservation.Status = "wait verifying";
-            reservation.DestinationId = 2;
             _reservationManager.TAdd(reservation);
             return RedirectToAction(nameof(MyCurrentReservation));
+        }
+        public IActionResult Test()
+        {
+            return View();
         }
     }
 }

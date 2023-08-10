@@ -1,0 +1,31 @@
+﻿<div class="col-xl-4 col-lg-12">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title" id="heading-multiple-thumbnails">@ViewBag.NameSurname</h4>
+            <a class="heading-elements-toggle">
+                <i class="la la-ellipsis-v font-medium-3"></i>
+            </a>
+            <div class="heading-elements">
+                <span class="avatar">
+                    <img src="~/chameleon/theme-assets/images/portrait/small/avatar-s-2.png" alt="avatar">
+                </span>
+                <span class="avatar">
+                    <img src="~/chameleon/theme-assets/images/portrait/small/avatar-s-3.png" alt="avatar">
+                </span>
+                <span class="avatar">
+                    <img src="~/chameleon/theme-assets/images/portrait/small/avatar-s-4.png" alt="avatar">
+                </span>
+            </div>
+        </div>
+        <div class="card-content">
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item border-0 ps-0 pt-0 text-sm"><strong class="text-dark">Full Name:</strong> @ViewBag.NameSurname</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Mobile:</strong>@ViewBag.phone</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Email:</strong> @ViewBag.email</li>
+                    <li class="list-group-item border-0 ps-0 text-sm"><strong class="text-dark">Location:</strong> Azerbaijan</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

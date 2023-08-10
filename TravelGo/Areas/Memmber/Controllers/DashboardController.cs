@@ -22,5 +22,10 @@ namespace TravelGo.Areas.Memmber.Controllers
             ViewBag.ImageUrl = user.ImageUrl;
             return View();
         }
+
+        public async Task<IActionResult> MemmberDashboard()
+        {
+            return View();
+        }
     }
 }

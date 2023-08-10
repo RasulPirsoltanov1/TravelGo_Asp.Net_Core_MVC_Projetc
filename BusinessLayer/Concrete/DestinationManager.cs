@@ -25,5 +25,10 @@ namespace BusinessLayer.Concrete
         {
             return _tdal.GetDestinationWithGuide(expression);
         }
+
+        public List<Destination> GetLastDestinations(int take)
+        {
+            return _tdal.GetLastDestinations(take);
+        }
     }
 }

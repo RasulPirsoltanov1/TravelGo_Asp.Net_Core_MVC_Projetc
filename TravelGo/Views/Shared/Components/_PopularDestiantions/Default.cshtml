@@ -8,7 +8,7 @@
             <h3 class="hny-title">Popular Destinations</h3>
         </div>
         <div class="row bottom-ab-grids">
-         
+
             @foreach (var item in Model)
             {
                 <div class="col-lg-6 subject-card  mt-4">
@@ -16,7 +16,7 @@
                         <a href="#" class="card_title p-lg-4d-block">
                             <div class="row align-items-center">
                                 <div class="col-sm-5 subject-img">
-                                    <img src="@item.Image" class="img-fluid" alt="">
+                                    <img src="@item.Image" style="width:186px; height:210px;" class="img-fluid" alt="">
                                 </div>
                                 <div class="col-sm-7 subject-content mt-sm-0 mt-4">
                                     <h4>@item.City</h4>
@@ -25,14 +25,14 @@
                                         <h6 class=""> Start From </h6>
                                         <span>$@item.Price</span>
                                     </div>
-                                    <p class="sub-para">@item.Description</p>
+                                    <p class="sub-para">@item?.Description?.Substring(0,35) ...</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
             }
-      
+
         </div>
     </div>
 </section>
