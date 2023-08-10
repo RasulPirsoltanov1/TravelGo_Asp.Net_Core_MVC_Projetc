@@ -1,0 +1,15 @@
+﻿@using DTOLayer.DTOs.RoleDTOs;
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model CreateRoleDTO
+<h1>Add new Role</h1>
+
+<form class="form-group" method="post">
+    <input asp-for="Name" class="form-control"/>
+    <br />
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
