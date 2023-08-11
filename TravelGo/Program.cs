@@ -18,11 +18,33 @@ using BusinessLayer.CQRS.Queries.Destinations;
 using BusinessLayer.CQRS.Queries.GuideQueries;
 using FluentValidation;
 using BusinessLayer.ValidationRules.ContactUs;
+using Microsoft.Extensions.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.AspNetCore.Localization;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
+builder.Services.AddLocalization(opt =>
+{
+    opt.ResourcesPath = "Resources";
+});
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+{
+    var supportedCultures = new[]
+    {
+        new CultureInfo("en"),
+        new CultureInfo("az"),
+        new CultureInfo("ru"),
+    };
+
+    options.DefaultRequestCulture = new RequestCulture("az");
+    options.SupportedUICultures = supportedCultures;
+});
+
+
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>()
     .AddEntityFrameworkStores<Context>()
@@ -40,7 +62,10 @@ builder.Services.AddMvc(config =>
     var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
     config.Filters.Add(new AuthorizeFilter(policy));
 });
-builder.Services.AddMvc();
+
+
+
+
 builder.Services.ConfigureApplicationCookie(options =>
 {
     // Cookie settings
@@ -60,8 +85,9 @@ builder.Services.AddServiceRegistration();
 builder.Services.AddValidatorsFromAssemblyContaining<ContactUsCreateCommandValidator>();
 
 
-var app = builder.Build();
 
+var app = builder.Build();
+ 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -70,6 +96,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseRequestLocalization();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");
@@ -77,6 +105,9 @@ app.UseRouting();
 app.UseAuthentication();
 
 app.UseAuthorization();
+                             
+
+
 
 app.MapControllerRoute(
     name: "default",

@@ -35,6 +35,14 @@
         },
         "runtime": {
           "TravelGo.dll": {}
+        },
+        "resources": {
+          "az/TravelGo.resources.dll": {
+            "locale": "az"
+          },
+          "ru/TravelGo.resources.dll": {
+            "locale": "ru"
+          }
         }
       },
       "AdaskoTheBeAsT.MediatR.SimpleInjector/8.2.0": {

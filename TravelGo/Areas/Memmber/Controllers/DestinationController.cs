@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace TravelGo.Areas.Memmber.Controllers
 {
     [Area("memmber")]
-    [AllowAnonymous]
     [Route("[Area]/[controller]/[action]")]
     public class DestinationController : Controller
     {
