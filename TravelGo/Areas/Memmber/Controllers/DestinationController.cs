@@ -22,5 +22,19 @@ namespace TravelGo.Areas.Memmber.Controllers
             List<Destination> destinationList = _destinationManager.TGetList();
             return View(destinationList);
         }
+        [HttpGet]
+        public IActionResult GetByName([FromQuery]string searchName)
+        {
+            ViewBag.Name = searchName;
+            var dests = _destinationManager.TGetListByFilter(d => d.City.Contains(searchName));
+            if (dests != null)
+            {
+                return View(dests);
+            }
+            else
+            {
+                return RedirectToAction(nameof(Index));
+            }
+        }
     }
 }

@@ -40,6 +40,9 @@
           "az/TravelGo.resources.dll": {
             "locale": "az"
           },
+          "en/TravelGo.resources.dll": {
+            "locale": "en"
+          },
           "ru/TravelGo.resources.dll": {
             "locale": "ru"
           }

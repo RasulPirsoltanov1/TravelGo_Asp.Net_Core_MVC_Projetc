@@ -851,3 +851,6 @@ C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\Tr
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\bin\Debug\net6.0\en\TravelGo.resources.dll
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\obj\Debug\net6.0\TravelGo.Resources.Views.Information.index.en.resources
 C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\obj\Debug\net6.0\en\TravelGo.resources.dll
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\obj\Debug\net6.0\TravelGo.Resources.Views.Shared._MemberLayout.az.resources
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\obj\Debug\net6.0\TravelGo.Resources.Views.Shared._MemberLayout.en.resources
+C:\Users\resul\OneDrive\Masaüstü\Projects\TravelGo_Asp.Net_Core_MVC_Projetc\TravelGo\obj\Debug\net6.0\TravelGo.Resources.Views.Shared._MemberLayout.ru.resources
