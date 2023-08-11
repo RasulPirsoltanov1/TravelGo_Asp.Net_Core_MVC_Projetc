@@ -13,7 +13,7 @@ namespace DataAccessLayer.Concrete.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-UGCLLOE\\MSSQLSERVER2;Database=TravelGoDB;integrated security=true;Encrypt=false;");
+            optionsBuilder.UseSqlServer("Data Source=SQL5106.site4now.net;Initial Catalog=db_a9d6b5_cmcdatabase;User Id=db_a9d6b5_cmcdatabase_admin;Password=Resul123.");
             base.OnConfiguring(optionsBuilder);
         }
         public DbSet<About> Abouts { get; set; }

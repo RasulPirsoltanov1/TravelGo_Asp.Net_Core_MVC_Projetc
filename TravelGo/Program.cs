@@ -22,6 +22,7 @@ using Microsoft.Extensions.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,16 +45,15 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedUICultures = supportedCultures;
 });
 
-
 builder.Services.AddDbContext<Context>();
 builder.Services.AddIdentity<AppUser, AppRole>()
     .AddEntityFrameworkStores<Context>()
-    .AddErrorDescriber<CustomIdentityValidator>();
+    .AddErrorDescriber<CustomIdentityValidator>().AddDefaultTokenProviders();
 
 builder.Services.ContainerDependencies();
 
 builder.Host.UseSerilog((ctx, lc) => lc
-    .WriteTo.Console().WriteTo.File("wwwroot/logs/log.txt").WriteTo.MSSqlServer(@"Server=DESKTOP-UGCLLOE\\MSSQLSERVER2;Database=TravelGoDB;integrated security=true;", "Logs", autoCreateSqlTable: true).MinimumLevel.Error()
+    .WriteTo.Console().WriteTo.File("wwwroot/logs/log.txt").MinimumLevel.Error()
     .ReadFrom.Configuration(builder.Configuration));
 
 
